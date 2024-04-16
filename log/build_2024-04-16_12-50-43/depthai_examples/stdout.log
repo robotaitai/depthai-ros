@@ -1,0 +1,21 @@
+[35m[1mConsolidate compiler generated dependencies of target crop_control_service[0m
+[35m[1mConsolidate compiler generated dependencies of target rgb_stereo_node[0m
+[35m[1mConsolidate compiler generated dependencies of target stereo_node[0m
+[35m[1mConsolidate compiler generated dependencies of target mobilenet_node[0m
+[  5%] [32mBuilding CXX object CMakeFiles/stereo_inertial_node.dir/src/stereo_inertial_publisher.cpp.o[0m
+[ 15%] Built target crop_control_service
+[ 20%] [32mBuilding CXX object CMakeFiles/feature_tracker.dir/src/feature_tracker_publisher.cpp.o[0m
+[ 30%] Built target stereo_node
+[ 35%] [32mBuilding CXX object CMakeFiles/rgb_stereo_node.dir/src/rgb_stereo_node.cpp.o[0m
+[ 45%] Built target mobilenet_node
+[35m[1mConsolidate compiler generated dependencies of target yolov4_spatial_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/yolov4_node.dir/src/yolov4_publisher.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/tracker_yolov4_node.dir/src/tracker_yolov4_publisher.cpp.o[0m
+[ 65%] Built target yolov4_spatial_node
+[ 70%] [32mBuilding CXX object CMakeFiles/tracker_yolov4_spatial_node.dir/src/tracker_yolov4_spatial_publisher.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable rgb_stereo_node[0m
+[ 80%] [32m[1mLinking CXX executable yolov4_node[0m
+[ 80%] Built target rgb_stereo_node
+[ 80%] Built target yolov4_node
+[ 85%] [32m[1mLinking CXX executable feature_tracker[0m
+[ 85%] Built target feature_tracker

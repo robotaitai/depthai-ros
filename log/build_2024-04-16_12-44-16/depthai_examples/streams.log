@@ -1,0 +1,90 @@
+[0.031s] Invoking command in '/workspaces/depthai-ros/build/depthai_examples': AMENT_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_bridge:/workspaces/depthai-ros/install/depthai_ros_msgs:/workspaces/depthai-ros/install/depthai_descriptions:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_bridge:/workspaces/depthai-ros/install/depthai_ros_msgs:/workspaces/depthai-ros/install/depthai_descriptions:/ws/install:/opt/ros/humble GAZEBO_MODEL_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${GAZEBO_MODEL_PATH} GAZEBO_RESOURCE_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${GAZEBO_RESOURCE_PATH} IGN_GAZEBO_MODEL_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${IGN_GAZEBO_MODEL_PATH} IGN_GAZEBO_RESOURCE_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${IGN_GAZEBO_RESOURCE_PATH} LD_LIBRARY_PATH=/workspaces/depthai-ros/install/depthai_bridge/lib:/workspaces/depthai-ros/install/depthai_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/depthai-ros/depthai_examples -DCMAKE_INSTALL_PREFIX=/workspaces/depthai-ros/install/depthai_examples
+[0.164s] -- The CXX compiler identification is GNU 11.4.0
+[0.282s] -- The C compiler identification is GNU 11.4.0
+[0.302s] -- Detecting CXX compiler ABI info
+[0.460s] -- Detecting CXX compiler ABI info - done
+[0.473s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.474s] -- Detecting CXX compile features
+[0.476s] -- Detecting CXX compile features - done
+[0.484s] -- Detecting C compiler ABI info
+[0.620s] -- Detecting C compiler ABI info - done
+[0.632s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.633s] -- Detecting C compile features
+[0.633s] -- Detecting C compile features - done
+[17.446s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[17.731s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[17.962s] -- ------------------------------------------
+[17.962s] -- Depthai Bridge is being built using AMENT.
+[17.962s] -- ------------------------------------------
+[17.965s] -- Found camera_info_manager: 3.1.8 (/opt/ros/humble/share/camera_info_manager/cmake)
+[18.080s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[18.092s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[18.113s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[18.147s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[18.192s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[18.349s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[18.355s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[18.569s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[18.615s] -- Found FastRTPS: /opt/ros/humble/include  
+[18.701s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[18.728s] -- Looking for pthread.h
+[18.875s] -- Looking for pthread.h - found
+[18.875s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[19.029s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[19.032s] -- Found Threads: TRUE  
+[19.730s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[19.768s] -- Found depthai_ros_msgs: 2.9.0 (/workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/cmake)
+[20.180s] -- Found depthai_bridge: 2.9.0 (/workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/cmake)
+[21.270s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[21.272s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[21.273s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[21.524s] -- Configuring done
+[21.698s] -- Generating done
+[21.699s] -- Build files have been written to: /workspaces/depthai-ros/build/depthai_examples
+[21.733s] Invoked command in '/workspaces/depthai-ros/build/depthai_examples' returned '0': AMENT_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_bridge:/workspaces/depthai-ros/install/depthai_ros_msgs:/workspaces/depthai-ros/install/depthai_descriptions:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_bridge:/workspaces/depthai-ros/install/depthai_ros_msgs:/workspaces/depthai-ros/install/depthai_descriptions:/ws/install:/opt/ros/humble GAZEBO_MODEL_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${GAZEBO_MODEL_PATH} GAZEBO_RESOURCE_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${GAZEBO_RESOURCE_PATH} IGN_GAZEBO_MODEL_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${IGN_GAZEBO_MODEL_PATH} IGN_GAZEBO_RESOURCE_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${IGN_GAZEBO_RESOURCE_PATH} LD_LIBRARY_PATH=/workspaces/depthai-ros/install/depthai_bridge/lib:/workspaces/depthai-ros/install/depthai_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/depthai-ros/depthai_examples -DCMAKE_INSTALL_PREFIX=/workspaces/depthai-ros/install/depthai_examples
+[21.738s] Invoking command in '/workspaces/depthai-ros/build/depthai_examples': AMENT_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_bridge:/workspaces/depthai-ros/install/depthai_ros_msgs:/workspaces/depthai-ros/install/depthai_descriptions:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_bridge:/workspaces/depthai-ros/install/depthai_ros_msgs:/workspaces/depthai-ros/install/depthai_descriptions:/ws/install:/opt/ros/humble GAZEBO_MODEL_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${GAZEBO_MODEL_PATH} GAZEBO_RESOURCE_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${GAZEBO_RESOURCE_PATH} IGN_GAZEBO_MODEL_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${IGN_GAZEBO_MODEL_PATH} IGN_GAZEBO_RESOURCE_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${IGN_GAZEBO_RESOURCE_PATH} LD_LIBRARY_PATH=/workspaces/depthai-ros/install/depthai_bridge/lib:/workspaces/depthai-ros/install/depthai_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/depthai-ros/build/depthai_examples -- -j6 -l6
+[21.850s] [  5%] [32mBuilding CXX object CMakeFiles/stereo_inertial_node.dir/src/stereo_inertial_publisher.cpp.o[0m
+[21.857s] [ 10%] [32mBuilding CXX object CMakeFiles/rgb_stereo_node.dir/src/rgb_stereo_node.cpp.o[0m
+[21.858s] [ 15%] [32mBuilding CXX object CMakeFiles/mobilenet_node.dir/src/mobilenet_publisher.cpp.o[0m
+[21.869s] [ 20%] [32mBuilding CXX object CMakeFiles/stereo_node.dir/src/stereo_publisher.cpp.o[0m
+[21.872s] [ 25%] [32mBuilding CXX object CMakeFiles/feature_tracker.dir/src/feature_tracker_publisher.cpp.o[0m
+[21.880s] [ 30%] [32mBuilding CXX object CMakeFiles/crop_control_service.dir/src/crop_control_service.cpp.o[0m
+[36.449s] [ 35%] [32m[1mLinking CXX executable crop_control_service[0m
+[37.608s] [ 35%] Built target crop_control_service
+[37.672s] [ 40%] [32mBuilding CXX object CMakeFiles/yolov4_spatial_node.dir/src/yolov4_spatial_publisher.cpp.o[0m
+[37.931s] [01m[K/workspaces/depthai-ros/depthai_examples/src/rgb_stereo_node.cpp:[m[K In lambda function:
+[37.932s] [01m[K/workspaces/depthai-ros/depthai_examples/src/rgb_stereo_node.cpp:233:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool dai::DeviceBase::setIrLaserDotProjectorBrightness(float, int)[m[K’ is deprecated: Use setIrLaserDotProjectorIntensity(float intensity) instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[37.932s]   233 |             [01;35m[Kdevice.setIrLaserDotProjectorBrightness(static_cast<float>(dotProjectormA))[m[K;
+[37.933s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[37.934s] In file included from [01m[K/opt/ros/humble/include/depthai/device/Device.hpp:14[m[K,
+[37.934s]                  from [01m[K/workspaces/depthai-ros/depthai_examples/src/rgb_stereo_node.cpp:17[m[K:
+[37.934s] [01m[K/opt/ros/humble/include/depthai/device/DeviceBase.hpp:498:90:[m[K [01;36m[Knote: [m[Kdeclared here
+[37.935s]   498 |     [[deprecated("Use setIrLaserDotProjectorIntensity(float intensity) instead.")]] bool [01;36m[KsetIrLaserDotProjectorBrightness[m[K(float mA, int mask = -1);
+[37.935s]       |                                                                                          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[37.935s] [01m[K/workspaces/depthai-ros/depthai_examples/src/rgb_stereo_node.cpp:239:45:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool dai::DeviceBase::setIrFloodLightBrightness(float, int)[m[K’ is deprecated: Use setIrFloodLightIntensity(float intensity) instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[37.935s]   239 |             [01;35m[Kdevice.setIrFloodLightBrightness(static_cast<float>(floodLightmA))[m[K;
+[37.936s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[37.936s] In file included from [01m[K/opt/ros/humble/include/depthai/device/Device.hpp:14[m[K,
+[37.936s]                  from [01m[K/workspaces/depthai-ros/depthai_examples/src/rgb_stereo_node.cpp:17[m[K:
+[37.936s] [01m[K/opt/ros/humble/include/depthai/device/DeviceBase.hpp:510:83:[m[K [01;36m[Knote: [m[Kdeclared here
+[37.936s]   510 |     [[deprecated("Use setIrFloodLightIntensity(float intensity) instead.")]] bool [01;36m[KsetIrFloodLightBrightness[m[K(float mA, int mask = -1);
+[37.936s]       |                                                                                   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[42.855s] [01m[Kc++:[m[K [01;31m[Kfatal error: [m[KKilled signal terminated program cc1plus
+[42.855s] compilation terminated.
+[42.857s] gmake[2]: *** [CMakeFiles/stereo_inertial_node.dir/build.make:76: CMakeFiles/stereo_inertial_node.dir/src/stereo_inertial_publisher.cpp.o] Error 1
+[42.859s] gmake[1]: *** [CMakeFiles/Makefile2:233: CMakeFiles/stereo_inertial_node.dir/all] Error 2
+[42.859s] gmake[1]: *** Waiting for unfinished jobs....
+[51.665s] [01m[Kc++:[m[K [01;31m[Kfatal error: [m[KKilled signal terminated program cc1plus
+[51.665s] compilation terminated.
+[51.670s] gmake[2]: *** [CMakeFiles/feature_tracker.dir/build.make:76: CMakeFiles/feature_tracker.dir/src/feature_tracker_publisher.cpp.o] Error 1
+[51.671s] gmake[1]: *** [CMakeFiles/Makefile2:259: CMakeFiles/feature_tracker.dir/all] Error 2
+[57.914s] [ 45%] [32m[1mLinking CXX executable rgb_stereo_node[0m
+[57.937s] [ 50%] [32m[1mLinking CXX executable mobilenet_node[0m
+[58.421s] [ 55%] [32m[1mLinking CXX executable stereo_node[0m
+[60.072s] [ 55%] Built target mobilenet_node
+[60.092s] [ 55%] Built target rgb_stereo_node
+[60.199s] [ 55%] Built target stereo_node
+[73.234s] [ 60%] [32m[1mLinking CXX executable yolov4_spatial_node[0m
+[74.840s] [ 60%] Built target yolov4_spatial_node
+[74.845s] gmake: *** [Makefile:146: all] Error 2
+[74.869s] Invoked command in '/workspaces/depthai-ros/build/depthai_examples' returned '2': AMENT_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_bridge:/workspaces/depthai-ros/install/depthai_ros_msgs:/workspaces/depthai-ros/install/depthai_descriptions:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_bridge:/workspaces/depthai-ros/install/depthai_ros_msgs:/workspaces/depthai-ros/install/depthai_descriptions:/ws/install:/opt/ros/humble GAZEBO_MODEL_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${GAZEBO_MODEL_PATH} GAZEBO_RESOURCE_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${GAZEBO_RESOURCE_PATH} IGN_GAZEBO_MODEL_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${IGN_GAZEBO_MODEL_PATH} IGN_GAZEBO_RESOURCE_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${IGN_GAZEBO_RESOURCE_PATH} LD_LIBRARY_PATH=/workspaces/depthai-ros/install/depthai_bridge/lib:/workspaces/depthai-ros/install/depthai_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/depthai-ros/build/depthai_examples -- -j6 -l6

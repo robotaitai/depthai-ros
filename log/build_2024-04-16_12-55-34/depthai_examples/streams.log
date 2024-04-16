@@ -1,0 +1,104 @@
+[0.036s] Invoking command in '/workspaces/depthai-ros/build/depthai_examples': AMENT_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_bridge:/workspaces/depthai-ros/install/depthai_ros_msgs:/workspaces/depthai-ros/install/depthai_descriptions:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_bridge:/workspaces/depthai-ros/install/depthai_ros_msgs:/workspaces/depthai-ros/install/depthai_descriptions:/ws/install:/opt/ros/humble GAZEBO_MODEL_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${GAZEBO_MODEL_PATH} GAZEBO_RESOURCE_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${GAZEBO_RESOURCE_PATH} IGN_GAZEBO_MODEL_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${IGN_GAZEBO_MODEL_PATH} IGN_GAZEBO_RESOURCE_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${IGN_GAZEBO_RESOURCE_PATH} LD_LIBRARY_PATH=/workspaces/depthai-ros/install/depthai_bridge/lib:/workspaces/depthai-ros/install/depthai_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/depthai-ros/build/depthai_examples -- -j6 -l6
+[0.132s] [35m[1mConsolidate compiler generated dependencies of target rgb_stereo_node[0m
+[0.135s] [35m[1mConsolidate compiler generated dependencies of target feature_tracker[0m
+[0.199s] [  5%] [32mBuilding CXX object CMakeFiles/stereo_inertial_node.dir/src/stereo_inertial_publisher.cpp.o[0m
+[0.246s] [ 15%] Built target rgb_stereo_node
+[0.250s] [ 25%] Built target mobilenet_node
+[0.251s] [ 40%] Built target stereo_node
+[0.252s] [ 45%] Built target crop_control_service
+[0.281s] [35m[1mConsolidate compiler generated dependencies of target yolov4_node[0m
+[0.322s] [ 55%] Built target feature_tracker
+[0.342s] [ 60%] [32mBuilding CXX object CMakeFiles/tracker_yolov4_spatial_node.dir/src/tracker_yolov4_spatial_publisher.cpp.o[0m
+[0.355s] [ 65%] [32mBuilding CXX object CMakeFiles/tracker_yolov4_node.dir/src/tracker_yolov4_publisher.cpp.o[0m
+[0.366s] [ 75%] Built target yolov4_spatial_node
+[0.373s] [ 85%] Built target yolov4_node
+[16.599s] [01m[K/workspaces/depthai-ros/depthai_examples/src/stereo_inertial_publisher.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[16.602s] [01m[K/workspaces/depthai-ros/depthai_examples/src/stereo_inertial_publisher.cpp:488:53:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool dai::DeviceBase::setIrLaserDotProjectorBrightness(float, int)[m[K’ is deprecated: Use setIrLaserDotProjectorIntensity(float intensity) instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[16.604s]   488 |             [01;35m[Kdevice->setIrLaserDotProjectorBrightness(dotProjectormA)[m[K;
+[16.606s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[16.608s] In file included from [01m[K/opt/ros/humble/include/depthai/device/Device.hpp:14[m[K,
+[16.610s]                  from [01m[K/workspaces/depthai-ros/depthai_examples/src/stereo_inertial_publisher.cpp:15[m[K:
+[16.612s] [01m[K/opt/ros/humble/include/depthai/device/DeviceBase.hpp:498:90:[m[K [01;36m[Knote: [m[Kdeclared here
+[16.614s]   498 |     [[deprecated("Use setIrLaserDotProjectorIntensity(float intensity) instead.")]] bool [01;36m[KsetIrLaserDotProjectorBrightness[m[K(float mA, int mask = -1);
+[16.615s]       |                                                                                          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[16.617s] [01m[K/workspaces/depthai-ros/depthai_examples/src/stereo_inertial_publisher.cpp:492:46:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool dai::DeviceBase::setIrFloodLightBrightness(float, int)[m[K’ is deprecated: Use setIrFloodLightIntensity(float intensity) instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[16.619s]   492 |             [01;35m[Kdevice->setIrFloodLightBrightness(floodLightmA)[m[K;
+[16.621s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[16.622s] In file included from [01m[K/opt/ros/humble/include/depthai/device/Device.hpp:14[m[K,
+[16.624s]                  from [01m[K/workspaces/depthai-ros/depthai_examples/src/stereo_inertial_publisher.cpp:15[m[K:
+[16.626s] [01m[K/opt/ros/humble/include/depthai/device/DeviceBase.hpp:510:83:[m[K [01;36m[Knote: [m[Kdeclared here
+[16.627s]   510 |     [[deprecated("Use setIrFloodLightIntensity(float intensity) instead.")]] bool [01;36m[KsetIrFloodLightBrightness[m[K(float mA, int mask = -1);
+[16.629s]       |                                                                                   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[33.416s] [ 90%] [32m[1mLinking CXX executable tracker_yolov4_node[0m
+[33.919s] [ 95%] [32m[1mLinking CXX executable tracker_yolov4_spatial_node[0m
+[35.626s] [ 95%] Built target tracker_yolov4_node
+[35.771s] [ 95%] Built target tracker_yolov4_spatial_node
+[37.647s] [100%] [32m[1mLinking CXX executable stereo_inertial_node[0m
+[39.591s] [100%] Built target stereo_inertial_node
+[39.630s] Invoked command in '/workspaces/depthai-ros/build/depthai_examples' returned '0': AMENT_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_bridge:/workspaces/depthai-ros/install/depthai_ros_msgs:/workspaces/depthai-ros/install/depthai_descriptions:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_bridge:/workspaces/depthai-ros/install/depthai_ros_msgs:/workspaces/depthai-ros/install/depthai_descriptions:/ws/install:/opt/ros/humble GAZEBO_MODEL_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${GAZEBO_MODEL_PATH} GAZEBO_RESOURCE_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${GAZEBO_RESOURCE_PATH} IGN_GAZEBO_MODEL_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${IGN_GAZEBO_MODEL_PATH} IGN_GAZEBO_RESOURCE_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${IGN_GAZEBO_RESOURCE_PATH} LD_LIBRARY_PATH=/workspaces/depthai-ros/install/depthai_bridge/lib:/workspaces/depthai-ros/install/depthai_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/depthai-ros/build/depthai_examples -- -j6 -l6
+[39.740s] Invoking command in '/workspaces/depthai-ros/build/depthai_examples': AMENT_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_bridge:/workspaces/depthai-ros/install/depthai_ros_msgs:/workspaces/depthai-ros/install/depthai_descriptions:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_bridge:/workspaces/depthai-ros/install/depthai_ros_msgs:/workspaces/depthai-ros/install/depthai_descriptions:/ws/install:/opt/ros/humble GAZEBO_MODEL_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${GAZEBO_MODEL_PATH} GAZEBO_RESOURCE_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${GAZEBO_RESOURCE_PATH} IGN_GAZEBO_MODEL_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${IGN_GAZEBO_MODEL_PATH} IGN_GAZEBO_RESOURCE_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${IGN_GAZEBO_RESOURCE_PATH} LD_LIBRARY_PATH=/workspaces/depthai-ros/install/depthai_bridge/lib:/workspaces/depthai-ros/install/depthai_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/depthai-ros/build/depthai_examples
+[39.758s] -- Install configuration: ""
+[39.758s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/params
+[39.759s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/params/camera
+[39.760s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/params/camera/right.yaml
+[39.761s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/params/camera/color.yaml
+[39.762s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/params/camera/left.yaml
+[39.762s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/rviz
+[39.763s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/rviz/stereo_nodelet.rviz
+[39.764s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/rviz/stereoInertial.rviz
+[39.765s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/rviz/stereoInertialDepthAlignROS2.rviz
+[39.766s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/rviz/stereoPointCloud.rviz
+[39.767s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/rviz/stereo_config.rviz
+[39.767s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/rviz/pointCloud.rviz
+[39.768s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/rviz/stereoInertialROS1.rviz
+[39.769s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/rviz/rgb_camera.rviz
+[39.772s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/rviz/stereoPointCloud_v1.rviz
+[39.772s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/rviz/stereoInertialDepthAlign.rviz
+[39.772s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/resources
+[39.772s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/resources/mobilenet-ssd_openvino_2021.2_6shave.blob
+[39.813s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/resources/deeplab_v3_plus_mnv2_decoder_256_openvino_2021.4.blob
+[39.827s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/resources/yolov4_tiny_coco_416x416_openvino_2021.4_6shave_bgr.blob
+[39.860s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/launch
+[39.860s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/launch/yolov4_publisher.launch.py
+[39.862s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/launch/stereo.launch.py
+[39.862s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/launch/mobile_publisher.launch.py
+[39.862s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/launch/tracker_yolov4_node.launch.py
+[39.862s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/launch/stereo_inertial_node.launch.py
+[39.862s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/launch/rgb_stereo_node.launch.py
+[39.865s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/launch/tracker_yolov4_spatial_node.launch.py
+[39.865s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/lib/depthai_examples/crop_control_service
+[39.870s] -- Set runtime path of "/workspaces/depthai-ros/install/depthai_examples/lib/depthai_examples/crop_control_service" to "/workspaces/depthai-ros/install/depthai_bridge/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/workspaces/depthai-ros/install/depthai_ros_msgs/lib"
+[39.871s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/lib/depthai_examples/mobilenet_node
+[39.888s] -- Set runtime path of "/workspaces/depthai-ros/install/depthai_examples/lib/depthai_examples/mobilenet_node" to "/workspaces/depthai-ros/install/depthai_bridge/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/workspaces/depthai-ros/install/depthai_ros_msgs/lib"
+[39.888s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/lib/depthai_examples/rgb_stereo_node
+[39.906s] -- Set runtime path of "/workspaces/depthai-ros/install/depthai_examples/lib/depthai_examples/rgb_stereo_node" to "/workspaces/depthai-ros/install/depthai_bridge/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/workspaces/depthai-ros/install/depthai_ros_msgs/lib"
+[39.906s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/lib/depthai_examples/stereo_inertial_node
+[39.925s] -- Set runtime path of "/workspaces/depthai-ros/install/depthai_examples/lib/depthai_examples/stereo_inertial_node" to "/workspaces/depthai-ros/install/depthai_bridge/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/workspaces/depthai-ros/install/depthai_ros_msgs/lib"
+[39.925s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/lib/depthai_examples/stereo_node
+[39.942s] -- Set runtime path of "/workspaces/depthai-ros/install/depthai_examples/lib/depthai_examples/stereo_node" to "/workspaces/depthai-ros/install/depthai_bridge/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/workspaces/depthai-ros/install/depthai_ros_msgs/lib"
+[39.943s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/lib/depthai_examples/yolov4_spatial_node
+[39.960s] -- Set runtime path of "/workspaces/depthai-ros/install/depthai_examples/lib/depthai_examples/yolov4_spatial_node" to "/workspaces/depthai-ros/install/depthai_bridge/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/workspaces/depthai-ros/install/depthai_ros_msgs/lib"
+[39.961s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/lib/depthai_examples/yolov4_node
+[39.977s] -- Set runtime path of "/workspaces/depthai-ros/install/depthai_examples/lib/depthai_examples/yolov4_node" to "/workspaces/depthai-ros/install/depthai_bridge/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/workspaces/depthai-ros/install/depthai_ros_msgs/lib"
+[39.977s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/lib/depthai_examples/feature_tracker
+[39.994s] -- Set runtime path of "/workspaces/depthai-ros/install/depthai_examples/lib/depthai_examples/feature_tracker" to "/workspaces/depthai-ros/install/depthai_bridge/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/workspaces/depthai-ros/install/depthai_ros_msgs/lib"
+[39.994s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/lib/depthai_examples/tracker_yolov4_node
+[40.008s] -- Set runtime path of "/workspaces/depthai-ros/install/depthai_examples/lib/depthai_examples/tracker_yolov4_node" to "/workspaces/depthai-ros/install/depthai_bridge/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/workspaces/depthai-ros/install/depthai_ros_msgs/lib"
+[40.010s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/lib/depthai_examples/tracker_yolov4_spatial_node
+[40.024s] -- Set runtime path of "/workspaces/depthai-ros/install/depthai_examples/lib/depthai_examples/tracker_yolov4_spatial_node" to "/workspaces/depthai-ros/install/depthai_bridge/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/workspaces/depthai-ros/install/depthai_ros_msgs/lib"
+[40.024s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/ament_index/resource_index/package_run_dependencies/depthai_examples
+[40.025s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/ament_index/resource_index/parent_prefix_path/depthai_examples
+[40.027s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/environment/ament_prefix_path.sh
+[40.028s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/environment/ament_prefix_path.dsv
+[40.029s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/environment/path.sh
+[40.030s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/environment/path.dsv
+[40.030s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/local_setup.bash
+[40.031s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/local_setup.sh
+[40.032s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/local_setup.zsh
+[40.032s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/local_setup.dsv
+[40.033s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/package.dsv
+[40.033s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/ament_index/resource_index/packages/depthai_examples
+[40.034s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/cmake/depthai_examplesConfig.cmake
+[40.034s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/cmake/depthai_examplesConfig-version.cmake
+[40.034s] -- Installing: /workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/package.xml
+[40.045s] Invoked command in '/workspaces/depthai-ros/build/depthai_examples' returned '0': AMENT_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_bridge:/workspaces/depthai-ros/install/depthai_ros_msgs:/workspaces/depthai-ros/install/depthai_descriptions:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_bridge:/workspaces/depthai-ros/install/depthai_ros_msgs:/workspaces/depthai-ros/install/depthai_descriptions:/ws/install:/opt/ros/humble GAZEBO_MODEL_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${GAZEBO_MODEL_PATH} GAZEBO_RESOURCE_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${GAZEBO_RESOURCE_PATH} IGN_GAZEBO_MODEL_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${IGN_GAZEBO_MODEL_PATH} IGN_GAZEBO_RESOURCE_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${IGN_GAZEBO_RESOURCE_PATH} LD_LIBRARY_PATH=/workspaces/depthai-ros/install/depthai_bridge/lib:/workspaces/depthai-ros/install/depthai_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/depthai-ros/build/depthai_examples

@@ -1,0 +1,27 @@
+[01m[K/workspaces/depthai-ros/depthai_examples/src/rgb_stereo_node.cpp:[m[K In lambda function:
+[01m[K/workspaces/depthai-ros/depthai_examples/src/rgb_stereo_node.cpp:233:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool dai::DeviceBase::setIrLaserDotProjectorBrightness(float, int)[m[K’ is deprecated: Use setIrLaserDotProjectorIntensity(float intensity) instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  233 |             [01;35m[Kdevice.setIrLaserDotProjectorBrightness(static_cast<float>(dotProjectormA))[m[K;
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/depthai/device/Device.hpp:14[m[K,
+                 from [01m[K/workspaces/depthai-ros/depthai_examples/src/rgb_stereo_node.cpp:17[m[K:
+[01m[K/opt/ros/humble/include/depthai/device/DeviceBase.hpp:498:90:[m[K [01;36m[Knote: [m[Kdeclared here
+  498 |     [[deprecated("Use setIrLaserDotProjectorIntensity(float intensity) instead.")]] bool [01;36m[KsetIrLaserDotProjectorBrightness[m[K(float mA, int mask = -1);
+      |                                                                                          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/depthai-ros/depthai_examples/src/rgb_stereo_node.cpp:239:45:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool dai::DeviceBase::setIrFloodLightBrightness(float, int)[m[K’ is deprecated: Use setIrFloodLightIntensity(float intensity) instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  239 |             [01;35m[Kdevice.setIrFloodLightBrightness(static_cast<float>(floodLightmA))[m[K;
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/depthai/device/Device.hpp:14[m[K,
+                 from [01m[K/workspaces/depthai-ros/depthai_examples/src/rgb_stereo_node.cpp:17[m[K:
+[01m[K/opt/ros/humble/include/depthai/device/DeviceBase.hpp:510:83:[m[K [01;36m[Knote: [m[Kdeclared here
+  510 |     [[deprecated("Use setIrFloodLightIntensity(float intensity) instead.")]] bool [01;36m[KsetIrFloodLightBrightness[m[K(float mA, int mask = -1);
+      |                                                                                   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Kc++:[m[K [01;31m[Kfatal error: [m[KKilled signal terminated program cc1plus
+compilation terminated.
+gmake[2]: *** [CMakeFiles/stereo_inertial_node.dir/build.make:76: CMakeFiles/stereo_inertial_node.dir/src/stereo_inertial_publisher.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:233: CMakeFiles/stereo_inertial_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[01m[Kc++:[m[K [01;31m[Kfatal error: [m[KKilled signal terminated program cc1plus
+compilation terminated.
+gmake[2]: *** [CMakeFiles/feature_tracker.dir/build.make:76: CMakeFiles/feature_tracker.dir/src/feature_tracker_publisher.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:259: CMakeFiles/feature_tracker.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

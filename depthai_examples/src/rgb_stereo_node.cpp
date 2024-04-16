@@ -206,10 +206,13 @@ int main(int argc, char** argv) {
     auto cb = [node, &device](const rclcpp::Parameter& p) {
         if(p.get_name() == std::string("dotProjectormA")) {
             RCLCPP_INFO(node->get_logger(), "Updating Dot Projector current to %f", p.as_double());
-            device.setIrLaserDotProjectorBrightness(static_cast<float>(p.as_double()));
+            // device.setIrLaserDotProjectorBrightness(static_cast<float>(p.as_double()));
+            device.setIrLaserDotProjectorIntensity(static_cast<float>(dotProjectormA));
+
         } else if(p.get_name() == std::string("floodLightmA")) {
             RCLCPP_INFO(node->get_logger(), "Updating Flood Light current to %f", p.as_double());
-            device.setIrFloodLightBrightness(static_cast<float>(p.as_double()));
+            // device.setIrFloodLightBrightness(static_cast<float>(p.as_double()));
+            device.setIrFloodLightIntensity(static_cast<float>(floodLightmA));
         }
     };
 

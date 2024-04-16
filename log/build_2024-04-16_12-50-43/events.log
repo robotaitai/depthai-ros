@@ -1,0 +1,1060 @@
+[0.000000] (-) TimerEvent: {}
+[0.001906] (depthai_descriptions) JobQueued: {'identifier': 'depthai_descriptions', 'dependencies': OrderedDict()}
+[0.002306] (depthai_ros_msgs) JobQueued: {'identifier': 'depthai_ros_msgs', 'dependencies': OrderedDict()}
+[0.002619] (depthai_bridge) JobQueued: {'identifier': 'depthai_bridge', 'dependencies': OrderedDict([('depthai_ros_msgs', '/workspaces/depthai-ros/install/depthai_ros_msgs')])}
+[0.002734] (depthai_filters) JobQueued: {'identifier': 'depthai_filters', 'dependencies': OrderedDict([('depthai_ros_msgs', '/workspaces/depthai-ros/install/depthai_ros_msgs')])}
+[0.003018] (depthai_examples) JobQueued: {'identifier': 'depthai_examples', 'dependencies': OrderedDict([('depthai_descriptions', '/workspaces/depthai-ros/install/depthai_descriptions'), ('depthai_ros_msgs', '/workspaces/depthai-ros/install/depthai_ros_msgs'), ('depthai_bridge', '/workspaces/depthai-ros/install/depthai_bridge')])}
+[0.003400] (depthai_ros_driver) JobQueued: {'identifier': 'depthai_ros_driver', 'dependencies': OrderedDict([('depthai_descriptions', '/workspaces/depthai-ros/install/depthai_descriptions'), ('depthai_ros_msgs', '/workspaces/depthai-ros/install/depthai_ros_msgs'), ('depthai_bridge', '/workspaces/depthai-ros/install/depthai_bridge'), ('depthai_examples', '/workspaces/depthai-ros/install/depthai_examples')])}
+[0.003518] (depthai-ros) JobQueued: {'identifier': 'depthai-ros', 'dependencies': OrderedDict([('depthai_descriptions', '/workspaces/depthai-ros/install/depthai_descriptions'), ('depthai_ros_msgs', '/workspaces/depthai-ros/install/depthai_ros_msgs'), ('depthai_bridge', '/workspaces/depthai-ros/install/depthai_bridge'), ('depthai_filters', '/workspaces/depthai-ros/install/depthai_filters'), ('depthai_examples', '/workspaces/depthai-ros/install/depthai_examples'), ('depthai_ros_driver', '/workspaces/depthai-ros/install/depthai_ros_driver')])}
+[0.003798] (depthai_ros_msgs) JobStarted: {'identifier': 'depthai_ros_msgs'}
+[0.023715] (depthai_descriptions) JobStarted: {'identifier': 'depthai_descriptions'}
+[0.034981] (depthai_ros_msgs) JobProgress: {'identifier': 'depthai_ros_msgs', 'progress': 'cmake'}
+[0.036706] (depthai_ros_msgs) JobProgress: {'identifier': 'depthai_ros_msgs', 'progress': 'build'}
+[0.038044] (depthai_ros_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/depthai-ros/build/depthai_ros_msgs', '--', '-j6', '-l6'], 'cwd': '/workspaces/depthai-ros/build/depthai_ros_msgs', 'env': OrderedDict([('WS', '/ws'), ('HOSTNAME', 'ubuntu'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/ws/install/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspaces/depthai-ros'), ('TERM_PROGRAM_VERSION', '1.88.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-793cb1c1-09aa-44c2-a6aa-9a07d5a65930.sock'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/extensions/git/dist/askpass-main.js'), ('PAGER', 'more'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/node'), ('REMOTE_CONTAINERS', 'true'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/ws/install'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-d375c775-c7f8-46e5-ba00-acd5659cec20.sock'), ('LOGNAME', 'root'), ('IGN_GAZEBO_MODEL_PATH', '/ws/install/share'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USER_ZDOTDIR', '/root'), ('GAZEBO_MODEL_PATH', '/ws/install/share'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-d375c775-c7f8-46e5-ba00-acd5659cec20.sock","/tmp/.X11-unix/X5","/root/.gnupg/S.gpg-agent"]'), ('LANG', 'C.UTF-8'), ('VSCODE_INJECTION', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-7d2527e12d.sock'), ('DEBIAN_FRONTEND', 'dialog'), ('AMENT_PREFIX_PATH', '/ws/install:/opt/ros/humble'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-d375c775-c7f8-46e5-ba00-acd5659cec20.sock'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X5'), ('SHELL', '/bin/bash'), ('IGN_GAZEBO_RESOURCE_PATH', '/ws/install/share'), ('GAZEBO_RESOURCE_PATH', '/ws/install/share'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'C.UTF-8'), ('PWD', '/workspaces/depthai-ros/build/depthai_ros_msgs'), ('ZDOTDIR', '/root'), ('PYTHONPATH', '/ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ws/install:/opt/ros/humble')]), 'shell': False}
+[0.048527] (depthai_descriptions) JobProgress: {'identifier': 'depthai_descriptions', 'progress': 'cmake'}
+[0.050902] (depthai_descriptions) JobProgress: {'identifier': 'depthai_descriptions', 'progress': 'build'}
+[0.051664] (depthai_descriptions) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/depthai-ros/build/depthai_descriptions', '--', '-j6', '-l6'], 'cwd': '/workspaces/depthai-ros/build/depthai_descriptions', 'env': OrderedDict([('WS', '/ws'), ('HOSTNAME', 'ubuntu'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/ws/install/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspaces/depthai-ros'), ('TERM_PROGRAM_VERSION', '1.88.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-793cb1c1-09aa-44c2-a6aa-9a07d5a65930.sock'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/extensions/git/dist/askpass-main.js'), ('PAGER', 'more'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/node'), ('REMOTE_CONTAINERS', 'true'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/ws/install'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-d375c775-c7f8-46e5-ba00-acd5659cec20.sock'), ('LOGNAME', 'root'), ('IGN_GAZEBO_MODEL_PATH', '/ws/install/share'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USER_ZDOTDIR', '/root'), ('GAZEBO_MODEL_PATH', '/ws/install/share'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-d375c775-c7f8-46e5-ba00-acd5659cec20.sock","/tmp/.X11-unix/X5","/root/.gnupg/S.gpg-agent"]'), ('LANG', 'C.UTF-8'), ('VSCODE_INJECTION', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-7d2527e12d.sock'), ('DEBIAN_FRONTEND', 'dialog'), ('AMENT_PREFIX_PATH', '/ws/install:/opt/ros/humble'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-d375c775-c7f8-46e5-ba00-acd5659cec20.sock'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X5'), ('SHELL', '/bin/bash'), ('IGN_GAZEBO_RESOURCE_PATH', '/ws/install/share'), ('GAZEBO_RESOURCE_PATH', '/ws/install/share'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'C.UTF-8'), ('PWD', '/workspaces/depthai-ros/build/depthai_descriptions'), ('ZDOTDIR', '/root'), ('PYTHONPATH', '/ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ws/install:/opt/ros/humble')]), 'shell': False}
+[0.099249] (-) TimerEvent: {}
+[0.139614] (depthai_descriptions) CommandEnded: {'returncode': 0}
+[0.173879] (depthai_ros_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target depthai_ros_msgs__rosidl_generator_c\x1b[0m\n'}
+[0.199451] (-) TimerEvent: {}
+[0.203391] (depthai_ros_msgs) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_copy_depthai_ros_msgs\n'}
+[0.211096] (depthai_ros_msgs) StdoutLine: {'line': b'[  2%] Built target depthai_ros_msgs__cpp\n'}
+[0.211633] (depthai_ros_msgs) StdoutLine: {'line': b'[ 12%] Built target depthai_ros_msgs__rosidl_generator_c\n'}
+[0.223566] (depthai_descriptions) JobProgress: {'identifier': 'depthai_descriptions', 'progress': 'install'}
+[0.242556] (depthai_descriptions) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/depthai-ros/build/depthai_descriptions'], 'cwd': '/workspaces/depthai-ros/build/depthai_descriptions', 'env': OrderedDict([('WS', '/ws'), ('HOSTNAME', 'ubuntu'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/ws/install/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspaces/depthai-ros'), ('TERM_PROGRAM_VERSION', '1.88.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-793cb1c1-09aa-44c2-a6aa-9a07d5a65930.sock'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/extensions/git/dist/askpass-main.js'), ('PAGER', 'more'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/node'), ('REMOTE_CONTAINERS', 'true'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/ws/install'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-d375c775-c7f8-46e5-ba00-acd5659cec20.sock'), ('LOGNAME', 'root'), ('IGN_GAZEBO_MODEL_PATH', '/ws/install/share'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USER_ZDOTDIR', '/root'), ('GAZEBO_MODEL_PATH', '/ws/install/share'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-d375c775-c7f8-46e5-ba00-acd5659cec20.sock","/tmp/.X11-unix/X5","/root/.gnupg/S.gpg-agent"]'), ('LANG', 'C.UTF-8'), ('VSCODE_INJECTION', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-7d2527e12d.sock'), ('DEBIAN_FRONTEND', 'dialog'), ('AMENT_PREFIX_PATH', '/ws/install:/opt/ros/humble'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-d375c775-c7f8-46e5-ba00-acd5659cec20.sock'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X5'), ('SHELL', '/bin/bash'), ('IGN_GAZEBO_RESOURCE_PATH', '/ws/install/share'), ('GAZEBO_RESOURCE_PATH', '/ws/install/share'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'C.UTF-8'), ('PWD', '/workspaces/depthai-ros/build/depthai_descriptions'), ('ZDOTDIR', '/root'), ('PYTHONPATH', '/ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ws/install:/opt/ros/humble')]), 'shell': False}
+[0.244461] (depthai_ros_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target depthai_ros_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[0.244830] (depthai_ros_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target depthai_ros_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[0.265975] (depthai_ros_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target depthai_ros_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[0.282924] (depthai_descriptions) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.283971] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/launch\n'}
+[0.284503] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/launch/urdf_launch.py\n'}
+[0.284986] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf\n'}
+[0.285468] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf/depthai_descr.urdf.xacro\n'}
+[0.286216] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf/models\n'}
+[0.286748] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-D-SR.stl\n'}
+[0.287143] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-D-S2.stl\n'}
+[0.287527] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-D.stl\n'}
+[0.287991] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-D-CM4-POE.stl\n'}
+[0.288377] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-D-PRO-W.stl\n'}
+[0.288767] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-D-IOT-75.stl\n'}
+[0.289168] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-D-LITE.stl\n'}
+[0.289615] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-D-LR.stl\n'}
+[0.290067] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-D-PRO.stl\n'}
+[0.290446] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-D-POE.stl\n'}
+[0.290901] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf/base_descr.urdf.xacro\n'}
+[0.291278] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf/include\n'}
+[0.291708] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf/include/base_macro.urdf.xacro\n'}
+[0.292107] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf/include/depthai_macro.urdf.xacro\n'}
+[0.292636] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/environment/depthai_descriptions.sh\n'}
+[0.293099] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/environment/depthai_descriptions.dsv\n'}
+[0.293568] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/ament_index/resource_index/package_run_dependencies/depthai_descriptions\n'}
+[0.294141] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/ament_index/resource_index/parent_prefix_path/depthai_descriptions\n'}
+[0.294635] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/environment/ament_prefix_path.sh\n'}
+[0.295092] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/environment/ament_prefix_path.dsv\n'}
+[0.295548] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/environment/path.sh\n'}
+[0.296287] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/environment/path.dsv\n'}
+[0.296501] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/local_setup.bash\n'}
+[0.297287] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/local_setup.sh\n'}
+[0.297508] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/local_setup.zsh\n'}
+[0.297686] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/local_setup.dsv\n'}
+[0.299555] (-) TimerEvent: {}
+[0.299855] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/package.dsv\n'}
+[0.300100] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/ament_index/resource_index/packages/depthai_descriptions\n'}
+[0.300289] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/cmake/depthai_descriptionsConfig.cmake\n'}
+[0.300503] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/cmake/depthai_descriptionsConfig-version.cmake\n'}
+[0.300678] (depthai_descriptions) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/package.xml\n'}
+[0.303371] (depthai_ros_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target depthai_ros_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[0.306824] (depthai_descriptions) CommandEnded: {'returncode': 0}
+[0.382098] (depthai_ros_msgs) StdoutLine: {'line': b'[ 24%] Built target depthai_ros_msgs__rosidl_typesupport_introspection_c\n'}
+[0.394032] (depthai_ros_msgs) StdoutLine: {'line': b'[ 36%] Built target depthai_ros_msgs__rosidl_typesupport_c\n'}
+[0.401844] (-) TimerEvent: {}
+[0.473962] (depthai_ros_msgs) StdoutLine: {'line': b'[ 48%] Built target depthai_ros_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.501974] (depthai_ros_msgs) StdoutLine: {'line': b'[ 60%] Built target depthai_ros_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.502474] (-) TimerEvent: {}
+[0.509903] (depthai_ros_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target depthai_ros_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[0.530500] (depthai_ros_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target depthai_ros_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[0.562079] (depthai_descriptions) JobEnded: {'identifier': 'depthai_descriptions', 'rc': 0}
+[0.602729] (-) TimerEvent: {}
+[0.674002] (depthai_ros_msgs) StdoutLine: {'line': b'[ 72%] Built target depthai_ros_msgs__rosidl_typesupport_cpp\n'}
+[0.705899] (-) TimerEvent: {}
+[0.712022] (depthai_ros_msgs) StdoutLine: {'line': b'[ 83%] Built target depthai_ros_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.741962] (depthai_ros_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.745935] (depthai_ros_msgs) StdoutLine: {'line': b'writing depthai_ros_msgs.egg-info/PKG-INFO\n'}
+[0.746245] (depthai_ros_msgs) StdoutLine: {'line': b'writing dependency_links to depthai_ros_msgs.egg-info/dependency_links.txt\n'}
+[0.746440] (depthai_ros_msgs) StdoutLine: {'line': b'writing top-level names to depthai_ros_msgs.egg-info/top_level.txt\n'}
+[0.750600] (depthai_ros_msgs) StdoutLine: {'line': b"reading manifest file 'depthai_ros_msgs.egg-info/SOURCES.txt'\n"}
+[0.753919] (depthai_ros_msgs) StdoutLine: {'line': b"writing manifest file 'depthai_ros_msgs.egg-info/SOURCES.txt'\n"}
+[0.806114] (-) TimerEvent: {}
+[0.858088] (depthai_ros_msgs) StdoutLine: {'line': b'[ 83%] Built target depthai_ros_msgs\n'}
+[0.859675] (depthai_ros_msgs) StdoutLine: {'line': b'[ 83%] Built target ament_cmake_python_build_depthai_ros_msgs_egg\n'}
+[0.906290] (-) TimerEvent: {}
+[0.918493] (depthai_ros_msgs) StdoutLine: {'line': b'[ 84%] Built target depthai_ros_msgs__py\n'}
+[0.949911] (depthai_ros_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target depthai_ros_msgs__rosidl_generator_py\x1b[0m\n'}
+[1.006479] (-) TimerEvent: {}
+[1.011582] (depthai_ros_msgs) StdoutLine: {'line': b'[ 95%] Built target depthai_ros_msgs__rosidl_generator_py\n'}
+[1.036009] (depthai_ros_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target depthai_ros_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[1.038643] (depthai_ros_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target depthai_ros_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[1.054891] (depthai_ros_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target depthai_ros_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[1.084751] (depthai_ros_msgs) StdoutLine: {'line': b'[ 97%] Built target depthai_ros_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[1.113916] (-) TimerEvent: {}
+[1.133254] (depthai_ros_msgs) StdoutLine: {'line': b'[ 99%] Built target depthai_ros_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.137282] (depthai_ros_msgs) StdoutLine: {'line': b'[100%] Built target depthai_ros_msgs__rosidl_typesupport_c__pyext\n'}
+[1.182486] (depthai_ros_msgs) CommandEnded: {'returncode': 0}
+[1.214054] (-) TimerEvent: {}
+[1.315068] (-) TimerEvent: {}
+[1.416100] (-) TimerEvent: {}
+[1.517396] (-) TimerEvent: {}
+[1.618677] (-) TimerEvent: {}
+[1.719864] (-) TimerEvent: {}
+[1.762874] (depthai_ros_msgs) JobProgress: {'identifier': 'depthai_ros_msgs', 'progress': 'install'}
+[1.763103] (depthai_ros_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/depthai-ros/build/depthai_ros_msgs'], 'cwd': '/workspaces/depthai-ros/build/depthai_ros_msgs', 'env': OrderedDict([('WS', '/ws'), ('HOSTNAME', 'ubuntu'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/ws/install/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspaces/depthai-ros'), ('TERM_PROGRAM_VERSION', '1.88.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-793cb1c1-09aa-44c2-a6aa-9a07d5a65930.sock'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/extensions/git/dist/askpass-main.js'), ('PAGER', 'more'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/node'), ('REMOTE_CONTAINERS', 'true'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/ws/install'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-d375c775-c7f8-46e5-ba00-acd5659cec20.sock'), ('LOGNAME', 'root'), ('IGN_GAZEBO_MODEL_PATH', '/ws/install/share'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USER_ZDOTDIR', '/root'), ('GAZEBO_MODEL_PATH', '/ws/install/share'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-d375c775-c7f8-46e5-ba00-acd5659cec20.sock","/tmp/.X11-unix/X5","/root/.gnupg/S.gpg-agent"]'), ('LANG', 'C.UTF-8'), ('VSCODE_INJECTION', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-7d2527e12d.sock'), ('DEBIAN_FRONTEND', 'dialog'), ('AMENT_PREFIX_PATH', '/ws/install:/opt/ros/humble'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-d375c775-c7f8-46e5-ba00-acd5659cec20.sock'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X5'), ('SHELL', '/bin/bash'), ('IGN_GAZEBO_RESOURCE_PATH', '/ws/install/share'), ('GAZEBO_RESOURCE_PATH', '/ws/install/share'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'C.UTF-8'), ('PWD', '/workspaces/depthai-ros/build/depthai_ros_msgs'), ('ZDOTDIR', '/root'), ('PYTHONPATH', '/ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ws/install:/opt/ros/humble')]), 'shell': False}
+[1.782424] (depthai_ros_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.783385] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/ament_index/resource_index/rosidl_interfaces/depthai_ros_msgs\n'}
+[1.784053] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs\n'}
+[1.784733] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg\n'}
+[1.785117] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[1.785572] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/spatial_detection_array.h\n'}
+[1.785979] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/auto_focus_ctrl.h\n'}
+[1.786169] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/tracked_feature.h\n'}
+[1.786393] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/hand_landmark.h\n'}
+[1.786607] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/track_detection2_d.h\n'}
+[1.786963] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail\n'}
+[1.787388] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/tracked_features__functions.c\n'}
+[1.787651] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/track_detection2_d_array__functions.h\n'}
+[1.787855] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/spatial_detection_array__functions.h\n'}
+[1.788064] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/spatial_detection__functions.c\n'}
+[1.788232] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/spatial_detection__type_support.h\n'}
+[1.788526] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/tracked_features__functions.h\n'}
+[1.788965] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/hand_landmark_array__type_support.h\n'}
+[1.789476] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/hand_landmark__functions.c\n'}
+[1.789666] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/spatial_detection_array__functions.c\n'}
+[1.789863] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/track_detection2_d__struct.h\n'}
+[1.790031] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/tracked_feature__type_support.h\n'}
+[1.790189] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/track_detection2_d_array__functions.c\n'}
+[1.790371] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/auto_focus_ctrl__struct.h\n'}
+[1.790527] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/auto_focus_ctrl__functions.h\n'}
+[1.790683] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/tracked_feature__struct.h\n'}
+[1.790835] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/tracked_features__struct.h\n'}
+[1.790985] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/track_detection2_d_array__struct.h\n'}
+[1.791137] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/hand_landmark_array__functions.h\n'}
+[1.791286] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/hand_landmark__type_support.h\n'}
+[1.791436] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/tracked_feature__functions.h\n'}
+[1.791585] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/imu_with_magnetic_field__type_support.h\n'}
+[1.791750] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/imu_with_magnetic_field__struct.h\n'}
+[1.791909] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/auto_focus_ctrl__functions.c\n'}
+[1.792060] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/spatial_detection_array__type_support.h\n'}
+[1.792208] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/imu_with_magnetic_field__functions.c\n'}
+[1.792361] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/hand_landmark_array__struct.h\n'}
+[1.792510] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/auto_focus_ctrl__type_support.h\n'}
+[1.792664] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/tracked_feature__functions.c\n'}
+[1.792818] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/track_detection2_d_array__type_support.h\n'}
+[1.792997] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/track_detection2_d__type_support.h\n'}
+[1.793150] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/track_detection2_d__functions.h\n'}
+[1.793296] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/spatial_detection_array__struct.h\n'}
+[1.793464] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/tracked_features__type_support.h\n'}
+[1.793618] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/imu_with_magnetic_field__functions.h\n'}
+[1.794293] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/hand_landmark_array__functions.c\n'}
+[1.794554] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/spatial_detection__functions.h\n'}
+[1.794781] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/spatial_detection__struct.h\n'}
+[1.794949] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/hand_landmark__struct.h\n'}
+[1.795115] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/track_detection2_d__functions.c\n'}
+[1.795329] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/hand_landmark__functions.h\n'}
+[1.795491] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/tracked_features.h\n'}
+[1.795843] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/imu_with_magnetic_field.h\n'}
+[1.796424] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/track_detection2_d_array.h\n'}
+[1.796952] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/spatial_detection.h\n'}
+[1.797130] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/hand_landmark_array.h\n'}
+[1.797367] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv\n'}
+[1.797536] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail\n'}
+[1.797695] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail/normalized_image_crop__functions.h\n'}
+[1.797984] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail/normalized_image_crop__struct.h\n'}
+[1.798212] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail/normalized_image_crop__type_support.h\n'}
+[1.798423] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail/trigger_named__functions.h\n'}
+[1.798585] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail/normalized_image_crop__functions.c\n'}
+[1.798741] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail/trigger_named__functions.c\n'}
+[1.798913] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail/trigger_named__struct.h\n'}
+[1.799169] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail/trigger_named__type_support.h\n'}
+[1.799335] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/normalized_image_crop.h\n'}
+[1.799491] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/trigger_named.h\n'}
+[1.799646] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/environment/library_path.sh\n'}
+[1.799883] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/environment/library_path.dsv\n'}
+[1.800125] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/lib/libdepthai_ros_msgs__rosidl_generator_c.so\n'}
+[1.800341] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs\n'}
+[1.800503] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg\n'}
+[1.800845] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail\n'}
+[1.801439] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/hand_landmark__rosidl_typesupport_fastrtps_c.h\n'}
+[1.801980] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/hand_landmark_array__rosidl_typesupport_fastrtps_c.h\n'}
+[1.802364] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/spatial_detection_array__rosidl_typesupport_fastrtps_c.h\n'}
+[1.802540] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/tracked_features__rosidl_typesupport_fastrtps_c.h\n'}
+[1.802705] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/track_detection2_d__rosidl_typesupport_fastrtps_c.h\n'}
+[1.802865] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/track_detection2_d_array__rosidl_typesupport_fastrtps_c.h\n'}
+[1.803026] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/imu_with_magnetic_field__rosidl_typesupport_fastrtps_c.h\n'}
+[1.803184] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/spatial_detection__rosidl_typesupport_fastrtps_c.h\n'}
+[1.803342] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/tracked_feature__rosidl_typesupport_fastrtps_c.h\n'}
+[1.803495] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/auto_focus_ctrl__rosidl_typesupport_fastrtps_c.h\n'}
+[1.803671] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[1.803843] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv\n'}
+[1.804003] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail\n'}
+[1.804155] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail/normalized_image_crop__rosidl_typesupport_fastrtps_c.h\n'}
+[1.804308] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail/trigger_named__rosidl_typesupport_fastrtps_c.h\n'}
+[1.804462] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/lib/libdepthai_ros_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[1.804612] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs\n'}
+[1.804761] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg\n'}
+[1.804910] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/auto_focus_ctrl.hpp\n'}
+[1.805065] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/track_detection2_d_array.hpp\n'}
+[1.805218] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/hand_landmark.hpp\n'}
+[1.805368] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/tracked_feature.hpp\n'}
+[1.805516] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/track_detection2_d.hpp\n'}
+[1.805667] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail\n'}
+[1.805845] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/tracked_feature__struct.hpp\n'}
+[1.806036] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/spatial_detection__traits.hpp\n'}
+[1.806189] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/tracked_features__builder.hpp\n'}
+[1.806342] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/tracked_feature__traits.hpp\n'}
+[1.806494] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/track_detection2_d_array__struct.hpp\n'}
+[1.806646] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/tracked_features__struct.hpp\n'}
+[1.806795] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/imu_with_magnetic_field__builder.hpp\n'}
+[1.806961] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/hand_landmark_array__struct.hpp\n'}
+[1.807113] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/auto_focus_ctrl__builder.hpp\n'}
+[1.807266] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/spatial_detection__builder.hpp\n'}
+[1.807415] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/hand_landmark__traits.hpp\n'}
+[1.807565] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/hand_landmark_array__builder.hpp\n'}
+[1.807713] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/hand_landmark__struct.hpp\n'}
+[1.807863] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/spatial_detection_array__builder.hpp\n'}
+[1.808019] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/auto_focus_ctrl__struct.hpp\n'}
+[1.808188] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/track_detection2_d__builder.hpp\n'}
+[1.808344] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/track_detection2_d_array__builder.hpp\n'}
+[1.808493] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/spatial_detection_array__traits.hpp\n'}
+[1.808643] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/track_detection2_d__traits.hpp\n'}
+[1.808792] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/spatial_detection_array__struct.hpp\n'}
+[1.808943] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/tracked_features__traits.hpp\n'}
+[1.809092] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/imu_with_magnetic_field__struct.hpp\n'}
+[1.809239] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/track_detection2_d__struct.hpp\n'}
+[1.809388] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/track_detection2_d_array__traits.hpp\n'}
+[1.809536] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/hand_landmark__builder.hpp\n'}
+[1.809685] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/hand_landmark_array__traits.hpp\n'}
+[1.809886] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/tracked_feature__builder.hpp\n'}
+[1.810060] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/spatial_detection__struct.hpp\n'}
+[1.810243] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/auto_focus_ctrl__traits.hpp\n'}
+[1.810398] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/imu_with_magnetic_field__traits.hpp\n'}
+[1.810550] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/hand_landmark_array.hpp\n'}
+[1.810697] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/tracked_features.hpp\n'}
+[1.810845] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/imu_with_magnetic_field.hpp\n'}
+[1.810994] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/spatial_detection_array.hpp\n'}
+[1.811141] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/spatial_detection.hpp\n'}
+[1.811288] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv\n'}
+[1.811437] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/trigger_named.hpp\n'}
+[1.811584] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/normalized_image_crop.hpp\n'}
+[1.811732] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail\n'}
+[1.811882] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail/trigger_named__traits.hpp\n'}
+[1.812032] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail/normalized_image_crop__traits.hpp\n'}
+[1.812183] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail/trigger_named__builder.hpp\n'}
+[1.812350] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail/normalized_image_crop__struct.hpp\n'}
+[1.812503] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail/trigger_named__struct.hpp\n'}
+[1.812655] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail/normalized_image_crop__builder.hpp\n'}
+[1.812807] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs\n'}
+[1.812957] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg\n'}
+[1.813108] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[1.813273] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail\n'}
+[1.813426] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/hand_landmark_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.813575] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/tracked_features__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.813724] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/spatial_detection_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.813909] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/track_detection2_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.814064] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/auto_focus_ctrl__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.814213] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/hand_landmark__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.814363] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/imu_with_magnetic_field__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.814545] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/spatial_detection__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.814696] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/tracked_feature__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.814851] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/dds_fastrtps\n'}
+[1.814997] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/track_detection2_d_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.815148] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv\n'}
+[1.815299] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail\n'}
+[1.815448] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail/normalized_image_crop__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.815598] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail/dds_fastrtps\n'}
+[1.815748] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail/trigger_named__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.815897] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/lib/libdepthai_ros_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[1.816047] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs\n'}
+[1.816213] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg\n'}
+[1.816378] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail\n'}
+[1.816529] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/spatial_detection__type_support.c\n'}
+[1.816679] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/spatial_detection__rosidl_typesupport_introspection_c.h\n'}
+[1.816829] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/tracked_features__type_support.c\n'}
+[1.816979] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/spatial_detection_array__type_support.c\n'}
+[1.817128] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/hand_landmark_array__type_support.c\n'}
+[1.817278] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/imu_with_magnetic_field__rosidl_typesupport_introspection_c.h\n'}
+[1.817430] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/hand_landmark_array__rosidl_typesupport_introspection_c.h\n'}
+[1.817579] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/track_detection2_d_array__type_support.c\n'}
+[1.817729] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/hand_landmark__rosidl_typesupport_introspection_c.h\n'}
+[1.817918] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/spatial_detection_array__rosidl_typesupport_introspection_c.h\n'}
+[1.818067] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/track_detection2_d__type_support.c\n'}
+[1.818217] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/auto_focus_ctrl__type_support.c\n'}
+[1.818367] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/imu_with_magnetic_field__type_support.c\n'}
+[1.818523] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/tracked_feature__type_support.c\n'}
+[1.818672] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/hand_landmark__type_support.c\n'}
+[1.818850] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/tracked_feature__rosidl_typesupport_introspection_c.h\n'}
+[1.819002] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/track_detection2_d_array__rosidl_typesupport_introspection_c.h\n'}
+[1.819155] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/tracked_features__rosidl_typesupport_introspection_c.h\n'}
+[1.819322] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/track_detection2_d__rosidl_typesupport_introspection_c.h\n'}
+[1.819474] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/auto_focus_ctrl__rosidl_typesupport_introspection_c.h\n'}
+[1.819622] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[1.819773] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv\n'}
+[1.819919] (-) TimerEvent: {}
+[1.820698] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail\n'}
+[1.854428] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail/normalized_image_crop__type_support.c\n'}
+[1.854775] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail/trigger_named__rosidl_typesupport_introspection_c.h\n'}
+[1.854972] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail/trigger_named__type_support.c\n'}
+[1.855180] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail/normalized_image_crop__rosidl_typesupport_introspection_c.h\n'}
+[1.855355] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/lib/libdepthai_ros_msgs__rosidl_typesupport_introspection_c.so\n'}
+[1.855520] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/lib/libdepthai_ros_msgs__rosidl_typesupport_c.so\n'}
+[1.855685] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs\n'}
+[1.855844] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg\n'}
+[1.855999] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail\n'}
+[1.856151] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/track_detection2_d__type_support.cpp\n'}
+[1.856305] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/hand_landmark__type_support.cpp\n'}
+[1.856459] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/auto_focus_ctrl__type_support.cpp\n'}
+[1.856609] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/track_detection2_d_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.856765] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/auto_focus_ctrl__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.856919] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/hand_landmark__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.857102] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/hand_landmark_array__type_support.cpp\n'}
+[1.857252] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/imu_with_magnetic_field__type_support.cpp\n'}
+[1.866350] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/hand_landmark_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.866652] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/track_detection2_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.866891] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/spatial_detection__type_support.cpp\n'}
+[1.867075] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/track_detection2_d_array__type_support.cpp\n'}
+[1.867244] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/tracked_features__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.867410] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/tracked_feature__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.867573] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/spatial_detection_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.867732] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/tracked_feature__type_support.cpp\n'}
+[1.867887] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/spatial_detection_array__type_support.cpp\n'}
+[1.868063] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/imu_with_magnetic_field__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.868220] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/tracked_features__type_support.cpp\n'}
+[1.868374] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/msg/detail/spatial_detection__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.868527] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv\n'}
+[1.868683] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail\n'}
+[1.868830] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail/normalized_image_crop__type_support.cpp\n'}
+[1.868982] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail/trigger_named__type_support.cpp\n'}
+[1.869155] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail/normalized_image_crop__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.869308] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/include/depthai_ros_msgs/depthai_ros_msgs/srv/detail/trigger_named__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.869461] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/lib/libdepthai_ros_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[1.869612] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/lib/libdepthai_ros_msgs__rosidl_typesupport_cpp.so\n'}
+[1.869988] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/environment/pythonpath.sh\n'}
+[1.870213] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/environment/pythonpath.dsv\n'}
+[1.870378] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs-2.9.0-py3.10.egg-info\n'}
+[1.870538] (depthai_ros_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs-2.9.0-py3.10.egg-info/SOURCES.txt\n'}
+[1.870698] (depthai_ros_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs-2.9.0-py3.10.egg-info/dependency_links.txt\n'}
+[1.870853] (depthai_ros_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs-2.9.0-py3.10.egg-info/top_level.txt\n'}
+[1.871004] (depthai_ros_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs-2.9.0-py3.10.egg-info/PKG-INFO\n'}
+[1.871159] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs\n'}
+[1.871311] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/depthai_ros_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[1.871502] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/__init__.py\n'}
+[1.871655] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/msg\n'}
+[1.871810] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/msg/_hand_landmark_array_s.c\n'}
+[1.871963] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/msg/_tracked_feature_s.c\n'}
+[1.872112] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/msg/_hand_landmark_s.c\n'}
+[1.872263] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/msg/_hand_landmark.py\n'}
+[1.872410] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/msg/__init__.py\n'}
+[1.872576] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/msg/_track_detection2_d_s.c\n'}
+[1.872743] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/msg/_tracked_features.py\n'}
+[1.872894] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/msg/_track_detection2_d_array.py\n'}
+[1.873045] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/msg/_tracked_features_s.c\n'}
+[1.873194] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/msg/_tracked_feature.py\n'}
+[1.873343] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/msg/_spatial_detection_array_s.c\n'}
+[1.873495] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/msg/_track_detection2_d.py\n'}
+[1.873646] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/msg/_track_detection2_d_array_s.c\n'}
+[1.873821] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/msg/_hand_landmark_array.py\n'}
+[1.873980] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/msg/_spatial_detection.py\n'}
+[1.874134] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/msg/_imu_with_magnetic_field_s.c\n'}
+[1.874285] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/msg/_auto_focus_ctrl_s.c\n'}
+[1.874435] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/msg/_spatial_detection_s.c\n'}
+[1.874585] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/msg/_auto_focus_ctrl.py\n'}
+[1.874733] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/msg/_spatial_detection_array.py\n'}
+[1.874882] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/msg/_imu_with_magnetic_field.py\n'}
+[1.875029] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/libdepthai_ros_msgs__rosidl_generator_py.so\n'}
+[1.875180] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/_depthai_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[1.875334] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/_depthai_ros_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[1.875482] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/depthai_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[1.875667] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/srv\n'}
+[1.875834] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/srv/__init__.py\n'}
+[1.875990] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/srv/_trigger_named_s.c\n'}
+[1.876138] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/srv/_normalized_image_crop_s.c\n'}
+[1.876289] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/srv/_trigger_named.py\n'}
+[1.876438] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/srv/_normalized_image_crop.py\n'}
+[1.876600] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/_depthai_ros_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[1.876755] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/depthai_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[1.900685] (depthai_ros_msgs) StdoutLine: {'line': b"Listing '/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs'...\n"}
+[1.902410] (depthai_ros_msgs) StdoutLine: {'line': b"Listing '/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/msg'...\n"}
+[1.904929] (depthai_ros_msgs) StdoutLine: {'line': b"Listing '/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/srv'...\n"}
+[1.905614] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/depthai_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[1.905864] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/depthai_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[1.906056] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages/depthai_ros_msgs/depthai_ros_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[1.907564] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/lib/libdepthai_ros_msgs__rosidl_generator_py.so\n'}
+[1.908399] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/msg/AutoFocusCtrl.idl\n'}
+[1.908608] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/msg/HandLandmark.idl\n'}
+[1.909535] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/msg/HandLandmarkArray.idl\n'}
+[1.909754] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/msg/ImuWithMagneticField.idl\n'}
+[1.909947] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/msg/TrackedFeature.idl\n'}
+[1.910121] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/msg/TrackedFeatures.idl\n'}
+[1.910363] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/msg/SpatialDetection.idl\n'}
+[1.910614] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/msg/SpatialDetectionArray.idl\n'}
+[1.910779] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/msg/TrackDetection2D.idl\n'}
+[1.910939] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/msg/TrackDetection2DArray.idl\n'}
+[1.911097] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/srv/TriggerNamed.idl\n'}
+[1.911253] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/srv/NormalizedImageCrop.idl\n'}
+[1.911406] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/msg/AutoFocusCtrl.msg\n'}
+[1.911562] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/msg/HandLandmark.msg\n'}
+[1.911718] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/msg/HandLandmarkArray.msg\n'}
+[1.911867] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/msg/ImuWithMagneticField.msg\n'}
+[1.912022] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/msg/TrackedFeature.msg\n'}
+[1.912216] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/msg/TrackedFeatures.msg\n'}
+[1.912373] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/msg/SpatialDetection.msg\n'}
+[1.912527] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/msg/SpatialDetectionArray.msg\n'}
+[1.912683] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/msg/TrackDetection2D.msg\n'}
+[1.912850] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/msg/TrackDetection2DArray.msg\n'}
+[1.913007] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/srv/TriggerNamed.srv\n'}
+[1.913158] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/srv/TriggerNamed_Request.msg\n'}
+[1.913308] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/srv/TriggerNamed_Response.msg\n'}
+[1.913464] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/srv/NormalizedImageCrop.srv\n'}
+[1.913615] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/srv/NormalizedImageCrop_Request.msg\n'}
+[1.913807] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/srv/NormalizedImageCrop_Response.msg\n'}
+[1.913987] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/ament_index/resource_index/package_run_dependencies/depthai_ros_msgs\n'}
+[1.914271] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/ament_index/resource_index/parent_prefix_path/depthai_ros_msgs\n'}
+[1.914516] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/environment/ament_prefix_path.sh\n'}
+[1.914711] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/environment/ament_prefix_path.dsv\n'}
+[1.914900] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/environment/path.sh\n'}
+[1.915064] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/environment/path.dsv\n'}
+[1.915220] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/local_setup.bash\n'}
+[1.915378] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/local_setup.sh\n'}
+[1.915531] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/local_setup.zsh\n'}
+[1.915681] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/local_setup.dsv\n'}
+[1.915832] (depthai_ros_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/package.dsv\n'}
+[1.915985] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/ament_index/resource_index/packages/depthai_ros_msgs\n'}
+[1.916135] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/cmake/export_depthai_ros_msgs__rosidl_generator_cExport.cmake\n'}
+[1.916288] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/cmake/export_depthai_ros_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[1.916440] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/cmake/export_depthai_ros_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[1.916590] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/cmake/export_depthai_ros_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[1.916744] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/cmake/export_depthai_ros_msgs__rosidl_generator_cppExport.cmake\n'}
+[1.916897] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/cmake/export_depthai_ros_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[1.917050] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/cmake/export_depthai_ros_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[1.917201] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/cmake/depthai_ros_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[1.917349] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/cmake/depthai_ros_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[1.917542] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/cmake/depthai_ros_msgs__rosidl_typesupport_cExport.cmake\n'}
+[1.917713] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/cmake/depthai_ros_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[1.917909] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/cmake/depthai_ros_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[1.918080] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/cmake/depthai_ros_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[1.918234] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/cmake/depthai_ros_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[1.918386] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/cmake/depthai_ros_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[1.920914] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/cmake/export_depthai_ros_msgs__rosidl_generator_pyExport.cmake\n'}
+[1.921314] (-) TimerEvent: {}
+[1.922306] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/cmake/export_depthai_ros_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[1.922568] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[1.922752] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.925149] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.925545] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.926056] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[1.926262] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[1.926444] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[1.926667] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/cmake/depthai_ros_msgsConfig.cmake\n'}
+[1.926836] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/cmake/depthai_ros_msgsConfig-version.cmake\n'}
+[1.926999] (depthai_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/package.xml\n'}
+[1.949791] (depthai_ros_msgs) CommandEnded: {'returncode': 0}
+[2.021479] (-) TimerEvent: {}
+[2.122623] (-) TimerEvent: {}
+[2.229915] (-) TimerEvent: {}
+[2.330903] (-) TimerEvent: {}
+[2.432117] (-) TimerEvent: {}
+[2.533466] (-) TimerEvent: {}
+[2.634833] (-) TimerEvent: {}
+[2.735944] (-) TimerEvent: {}
+[2.804970] (depthai_ros_msgs) JobEnded: {'identifier': 'depthai_ros_msgs', 'rc': 0}
+[2.808606] (depthai_bridge) JobStarted: {'identifier': 'depthai_bridge'}
+[2.817495] (depthai_filters) JobStarted: {'identifier': 'depthai_filters'}
+[2.831613] (depthai_bridge) JobProgress: {'identifier': 'depthai_bridge', 'progress': 'cmake'}
+[2.834756] (depthai_bridge) JobProgress: {'identifier': 'depthai_bridge', 'progress': 'build'}
+[2.835863] (depthai_bridge) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/depthai-ros/build/depthai_bridge', '--', '-j6', '-l6'], 'cwd': '/workspaces/depthai-ros/build/depthai_bridge', 'env': OrderedDict([('WS', '/ws'), ('HOSTNAME', 'ubuntu'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/workspaces/depthai-ros/install/depthai_ros_msgs/lib:/ws/install/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspaces/depthai-ros'), ('TERM_PROGRAM_VERSION', '1.88.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-793cb1c1-09aa-44c2-a6aa-9a07d5a65930.sock'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/extensions/git/dist/askpass-main.js'), ('PAGER', 'more'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/node'), ('REMOTE_CONTAINERS', 'true'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/ws/install'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-d375c775-c7f8-46e5-ba00-acd5659cec20.sock'), ('LOGNAME', 'root'), ('IGN_GAZEBO_MODEL_PATH', '/ws/install/share'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USER_ZDOTDIR', '/root'), ('GAZEBO_MODEL_PATH', '/ws/install/share'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-d375c775-c7f8-46e5-ba00-acd5659cec20.sock","/tmp/.X11-unix/X5","/root/.gnupg/S.gpg-agent"]'), ('LANG', 'C.UTF-8'), ('VSCODE_INJECTION', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-7d2527e12d.sock'), ('DEBIAN_FRONTEND', 'dialog'), ('AMENT_PREFIX_PATH', '/workspaces/depthai-ros/install/depthai_ros_msgs:/ws/install:/opt/ros/humble'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-d375c775-c7f8-46e5-ba00-acd5659cec20.sock'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X5'), ('SHELL', '/bin/bash'), ('IGN_GAZEBO_RESOURCE_PATH', '/ws/install/share'), ('GAZEBO_RESOURCE_PATH', '/ws/install/share'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'C.UTF-8'), ('PWD', '/workspaces/depthai-ros/build/depthai_bridge'), ('ZDOTDIR', '/root'), ('PYTHONPATH', '/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:/ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/depthai-ros/install/depthai_ros_msgs:/ws/install:/opt/ros/humble')]), 'shell': False}
+[2.839036] (-) TimerEvent: {}
+[2.844944] (depthai_filters) JobProgress: {'identifier': 'depthai_filters', 'progress': 'cmake'}
+[2.846662] (depthai_filters) JobProgress: {'identifier': 'depthai_filters', 'progress': 'build'}
+[2.847290] (depthai_filters) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/depthai-ros/build/depthai_filters', '--', '-j6', '-l6'], 'cwd': '/workspaces/depthai-ros/build/depthai_filters', 'env': OrderedDict([('WS', '/ws'), ('HOSTNAME', 'ubuntu'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/workspaces/depthai-ros/install/depthai_ros_msgs/lib:/ws/install/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspaces/depthai-ros'), ('TERM_PROGRAM_VERSION', '1.88.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-793cb1c1-09aa-44c2-a6aa-9a07d5a65930.sock'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/extensions/git/dist/askpass-main.js'), ('PAGER', 'more'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/node'), ('REMOTE_CONTAINERS', 'true'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/ws/install'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-d375c775-c7f8-46e5-ba00-acd5659cec20.sock'), ('LOGNAME', 'root'), ('IGN_GAZEBO_MODEL_PATH', '/ws/install/share'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USER_ZDOTDIR', '/root'), ('GAZEBO_MODEL_PATH', '/ws/install/share'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-d375c775-c7f8-46e5-ba00-acd5659cec20.sock","/tmp/.X11-unix/X5","/root/.gnupg/S.gpg-agent"]'), ('LANG', 'C.UTF-8'), ('VSCODE_INJECTION', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-7d2527e12d.sock'), ('DEBIAN_FRONTEND', 'dialog'), ('AMENT_PREFIX_PATH', '/workspaces/depthai-ros/install/depthai_ros_msgs:/ws/install:/opt/ros/humble'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-d375c775-c7f8-46e5-ba00-acd5659cec20.sock'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X5'), ('SHELL', '/bin/bash'), ('IGN_GAZEBO_RESOURCE_PATH', '/ws/install/share'), ('GAZEBO_RESOURCE_PATH', '/ws/install/share'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'C.UTF-8'), ('PWD', '/workspaces/depthai-ros/build/depthai_filters'), ('ZDOTDIR', '/root'), ('PYTHONPATH', '/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:/ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/depthai-ros/install/depthai_ros_msgs:/ws/install:/opt/ros/humble')]), 'shell': False}
+[2.939252] (-) TimerEvent: {}
+[2.959266] (depthai_filters) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target depthai_filters\x1b[0m\n'}
+[2.974087] (depthai_bridge) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target depthai_bridge\x1b[0m\n'}
+[3.039431] (-) TimerEvent: {}
+[3.140125] (-) TimerEvent: {}
+[3.240808] (-) TimerEvent: {}
+[3.268294] (depthai_filters) StdoutLine: {'line': b'[100%] Built target depthai_filters\n'}
+[3.321888] (depthai_filters) CommandEnded: {'returncode': 0}
+[3.333982] (depthai_bridge) StdoutLine: {'line': b'[100%] Built target depthai_bridge\n'}
+[3.341922] (-) TimerEvent: {}
+[3.361817] (depthai_bridge) CommandEnded: {'returncode': 0}
+[3.445850] (-) TimerEvent: {}
+[3.462272] (depthai_filters) JobProgress: {'identifier': 'depthai_filters', 'progress': 'install'}
+[3.462417] (depthai_filters) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/depthai-ros/build/depthai_filters'], 'cwd': '/workspaces/depthai-ros/build/depthai_filters', 'env': OrderedDict([('WS', '/ws'), ('HOSTNAME', 'ubuntu'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/workspaces/depthai-ros/install/depthai_ros_msgs/lib:/ws/install/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspaces/depthai-ros'), ('TERM_PROGRAM_VERSION', '1.88.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-793cb1c1-09aa-44c2-a6aa-9a07d5a65930.sock'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/extensions/git/dist/askpass-main.js'), ('PAGER', 'more'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/node'), ('REMOTE_CONTAINERS', 'true'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/ws/install'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-d375c775-c7f8-46e5-ba00-acd5659cec20.sock'), ('LOGNAME', 'root'), ('IGN_GAZEBO_MODEL_PATH', '/ws/install/share'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USER_ZDOTDIR', '/root'), ('GAZEBO_MODEL_PATH', '/ws/install/share'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-d375c775-c7f8-46e5-ba00-acd5659cec20.sock","/tmp/.X11-unix/X5","/root/.gnupg/S.gpg-agent"]'), ('LANG', 'C.UTF-8'), ('VSCODE_INJECTION', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-7d2527e12d.sock'), ('DEBIAN_FRONTEND', 'dialog'), ('AMENT_PREFIX_PATH', '/workspaces/depthai-ros/install/depthai_ros_msgs:/ws/install:/opt/ros/humble'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-d375c775-c7f8-46e5-ba00-acd5659cec20.sock'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X5'), ('SHELL', '/bin/bash'), ('IGN_GAZEBO_RESOURCE_PATH', '/ws/install/share'), ('GAZEBO_RESOURCE_PATH', '/ws/install/share'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'C.UTF-8'), ('PWD', '/workspaces/depthai-ros/build/depthai_filters'), ('ZDOTDIR', '/root'), ('PYTHONPATH', '/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:/ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/depthai-ros/install/depthai_ros_msgs:/ws/install:/opt/ros/humble')]), 'shell': False}
+[3.496791] (depthai_filters) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.497299] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/launch\n'}
+[3.497500] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/launch/example_wls_filter.launch.py\n'}
+[3.497681] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/launch/example_feature_tracker.launch.py\n'}
+[3.497876] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/launch/example_feature_3d.launch.py\n'}
+[3.498045] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/launch/example_seg_overlay.launch.py\n'}
+[3.498209] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/launch/spatial_bb.launch.py\n'}
+[3.498371] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/launch/example_det2d_overlay.launch.py\n'}
+[3.498530] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/launch/det2d_usb_cam_overlay.launch.py\n'}
+[3.498715] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/config\n'}
+[3.499226] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/config/usb_cam_overlay.yaml\n'}
+[3.499403] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/config/spatial_bb.yaml\n'}
+[3.499568] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/config/detection.yaml\n'}
+[3.499724] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/config/wls.yaml\n'}
+[3.499877] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/config/feature_tracker.yaml\n'}
+[3.500030] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/lib/libdepthai_filters.so\n'}
+[3.500181] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/include\n'}
+[3.500333] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/include/depthai_filters\n'}
+[3.500482] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/include/depthai_filters/detection2d_overlay.hpp\n'}
+[3.500631] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/include/depthai_filters/features_3d.hpp\n'}
+[3.500780] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/include/depthai_filters/spatial_bb.hpp\n'}
+[3.500949] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/include/depthai_filters/segmentation_overlay.hpp\n'}
+[3.501103] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/include/depthai_filters/wls_filter.hpp\n'}
+[3.501254] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/include/depthai_filters/feature_tracker_overlay.hpp\n'}
+[3.501401] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/include/depthai_filters/utils.hpp\n'}
+[3.501552] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/ament_index/resource_index/package_run_dependencies/depthai_filters\n'}
+[3.501702] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/ament_index/resource_index/parent_prefix_path/depthai_filters\n'}
+[3.501901] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/environment/ament_prefix_path.sh\n'}
+[3.502059] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/environment/ament_prefix_path.dsv\n'}
+[3.502209] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/environment/path.sh\n'}
+[3.502359] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/environment/path.dsv\n'}
+[3.502507] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/local_setup.bash\n'}
+[3.502654] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/local_setup.sh\n'}
+[3.502800] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/local_setup.zsh\n'}
+[3.502946] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/local_setup.dsv\n'}
+[3.503108] (depthai_filters) StdoutLine: {'line': b'-- Installing: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/package.dsv\n'}
+[3.506119] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/ament_index/resource_index/packages/depthai_filters\n'}
+[3.506559] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/ament_index/resource_index/rclcpp_components/depthai_filters\n'}
+[3.506840] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.507018] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/cmake/depthai_filtersConfig.cmake\n'}
+[3.507188] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/cmake/depthai_filtersConfig-version.cmake\n'}
+[3.507345] (depthai_filters) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/package.xml\n'}
+[3.517799] (depthai_filters) CommandEnded: {'returncode': 0}
+[3.546486] (depthai_bridge) JobProgress: {'identifier': 'depthai_bridge', 'progress': 'install'}
+[3.546648] (-) TimerEvent: {}
+[3.546921] (depthai_bridge) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/depthai-ros/build/depthai_bridge'], 'cwd': '/workspaces/depthai-ros/build/depthai_bridge', 'env': OrderedDict([('WS', '/ws'), ('HOSTNAME', 'ubuntu'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/workspaces/depthai-ros/install/depthai_ros_msgs/lib:/ws/install/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspaces/depthai-ros'), ('TERM_PROGRAM_VERSION', '1.88.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-793cb1c1-09aa-44c2-a6aa-9a07d5a65930.sock'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/extensions/git/dist/askpass-main.js'), ('PAGER', 'more'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/node'), ('REMOTE_CONTAINERS', 'true'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/ws/install'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-d375c775-c7f8-46e5-ba00-acd5659cec20.sock'), ('LOGNAME', 'root'), ('IGN_GAZEBO_MODEL_PATH', '/ws/install/share'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USER_ZDOTDIR', '/root'), ('GAZEBO_MODEL_PATH', '/ws/install/share'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-d375c775-c7f8-46e5-ba00-acd5659cec20.sock","/tmp/.X11-unix/X5","/root/.gnupg/S.gpg-agent"]'), ('LANG', 'C.UTF-8'), ('VSCODE_INJECTION', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-7d2527e12d.sock'), ('DEBIAN_FRONTEND', 'dialog'), ('AMENT_PREFIX_PATH', '/workspaces/depthai-ros/install/depthai_ros_msgs:/ws/install:/opt/ros/humble'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-d375c775-c7f8-46e5-ba00-acd5659cec20.sock'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X5'), ('SHELL', '/bin/bash'), ('IGN_GAZEBO_RESOURCE_PATH', '/ws/install/share'), ('GAZEBO_RESOURCE_PATH', '/ws/install/share'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'C.UTF-8'), ('PWD', '/workspaces/depthai-ros/build/depthai_bridge'), ('ZDOTDIR', '/root'), ('PYTHONPATH', '/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:/ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/depthai-ros/install/depthai_ros_msgs:/ws/install:/opt/ros/humble')]), 'shell': False}
+[3.573325] (depthai_bridge) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.573866] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/environment/library_path.sh\n'}
+[3.574100] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/environment/library_path.dsv\n'}
+[3.574285] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/include/\n'}
+[3.574460] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/include//depthai_bridge\n'}
+[3.574628] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/include//depthai_bridge/ImageConverter.hpp\n'}
+[3.574789] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/include//depthai_bridge/ImgDetectionConverter.hpp\n'}
+[3.574947] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/include//depthai_bridge/TrackSpatialDetectionConverter.hpp\n'}
+[3.575109] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/include//depthai_bridge/TFPublisher.hpp\n'}
+[3.575270] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/include//depthai_bridge/DisparityConverter.hpp\n'}
+[3.575429] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/include//depthai_bridge/BridgePublisher.hpp\n'}
+[3.575583] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/include//depthai_bridge/TrackedFeaturesConverter.hpp\n'}
+[3.575733] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/include//depthai_bridge/ImuConverter.hpp\n'}
+[3.575917] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/include//depthai_bridge/SpatialDetectionConverter.hpp\n'}
+[3.576070] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/include//depthai_bridge/TrackDetectionConverter.hpp\n'}
+[3.576221] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/include//depthai_bridge/depthaiUtility.hpp\n'}
+[3.576961] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/lib/libdepthai_bridge.so\n'}
+[3.577212] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/cmake/depthai_bridgeTargets.cmake\n'}
+[3.577526] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/cmake/depthai_bridgeTargets-noconfig.cmake\n'}
+[3.577981] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/rviz\n'}
+[3.578238] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/rviz/pointCloud.rviz\n'}
+[3.578411] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/share/ament_index/resource_index/package_run_dependencies/depthai_bridge\n'}
+[3.578596] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/share/ament_index/resource_index/parent_prefix_path/depthai_bridge\n'}
+[3.578759] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/environment/ament_prefix_path.sh\n'}
+[3.578917] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/environment/ament_prefix_path.dsv\n'}
+[3.579070] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/environment/path.sh\n'}
+[3.579224] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/environment/path.dsv\n'}
+[3.579377] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/local_setup.bash\n'}
+[3.579531] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/local_setup.sh\n'}
+[3.579681] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/local_setup.zsh\n'}
+[3.579831] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/local_setup.dsv\n'}
+[3.579980] (depthai_bridge) StdoutLine: {'line': b'-- Installing: /workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/package.dsv\n'}
+[3.580522] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/share/ament_index/resource_index/packages/depthai_bridge\n'}
+[3.586074] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/cmake/depthai_bridgeTargetsExport.cmake\n'}
+[3.586388] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/cmake/depthai_bridgeTargetsExport-noconfig.cmake\n'}
+[3.586588] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.586771] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.586943] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.587167] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.589883] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/cmake/depthai_bridgeConfig.cmake\n'}
+[3.594069] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/cmake/depthai_bridgeConfig-version.cmake\n'}
+[3.594264] (depthai_bridge) StdoutLine: {'line': b'-- Up-to-date: /workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/package.xml\n'}
+[3.621813] (depthai_bridge) CommandEnded: {'returncode': 0}
+[3.647190] (-) TimerEvent: {}
+[3.667578] (depthai_filters) JobEnded: {'identifier': 'depthai_filters', 'rc': 0}
+[3.744702] (depthai_bridge) JobEnded: {'identifier': 'depthai_bridge', 'rc': 0}
+[3.745940] (depthai_examples) JobStarted: {'identifier': 'depthai_examples'}
+[3.747395] (-) TimerEvent: {}
+[3.786427] (depthai_examples) JobProgress: {'identifier': 'depthai_examples', 'progress': 'cmake'}
+[3.788610] (depthai_examples) JobProgress: {'identifier': 'depthai_examples', 'progress': 'build'}
+[3.788707] (depthai_examples) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/depthai-ros/build/depthai_examples', '--', '-j6', '-l6'], 'cwd': '/workspaces/depthai-ros/build/depthai_examples', 'env': OrderedDict([('WS', '/ws'), ('HOSTNAME', 'ubuntu'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/workspaces/depthai-ros/install/depthai_bridge/lib:/workspaces/depthai-ros/install/depthai_ros_msgs/lib:/ws/install/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspaces/depthai-ros'), ('TERM_PROGRAM_VERSION', '1.88.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-793cb1c1-09aa-44c2-a6aa-9a07d5a65930.sock'), ('ZSH', '/root/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/extensions/git/dist/askpass-main.js'), ('PAGER', 'more'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/node'), ('REMOTE_CONTAINERS', 'true'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/ws/install'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-d375c775-c7f8-46e5-ba00-acd5659cec20.sock'), ('LOGNAME', 'root'), ('IGN_GAZEBO_MODEL_PATH', '/workspaces/depthai-ros/install/depthai_descriptions:/ws/install/share'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('USER_ZDOTDIR', '/root'), ('GAZEBO_MODEL_PATH', '/workspaces/depthai-ros/install/depthai_descriptions:/ws/install/share'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-arm64/5c3e652f63e798a5ac2f31ffd0d863669328dc4c/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-d375c775-c7f8-46e5-ba00-acd5659cec20.sock","/tmp/.X11-unix/X5","/root/.gnupg/S.gpg-agent"]'), ('LANG', 'C.UTF-8'), ('VSCODE_INJECTION', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-7d2527e12d.sock'), ('DEBIAN_FRONTEND', 'dialog'), ('AMENT_PREFIX_PATH', '/workspaces/depthai-ros/install/depthai_bridge:/workspaces/depthai-ros/install/depthai_ros_msgs:/workspaces/depthai-ros/install/depthai_descriptions:/ws/install:/opt/ros/humble'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-d375c775-c7f8-46e5-ba00-acd5659cec20.sock'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X5'), ('SHELL', '/bin/bash'), ('IGN_GAZEBO_RESOURCE_PATH', '/workspaces/depthai-ros/install/depthai_descriptions:/ws/install/share'), ('GAZEBO_RESOURCE_PATH', '/workspaces/depthai-ros/install/depthai_descriptions:/ws/install/share'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('LC_ALL', 'C.UTF-8'), ('PWD', '/workspaces/depthai-ros/build/depthai_examples'), ('ZDOTDIR', '/root'), ('PYTHONPATH', '/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:/ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/depthai-ros/install/depthai_bridge:/workspaces/depthai-ros/install/depthai_ros_msgs:/workspaces/depthai-ros/install/depthai_descriptions:/ws/install:/opt/ros/humble')]), 'shell': False}
+[3.847618] (-) TimerEvent: {}
+[3.926044] (depthai_examples) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target crop_control_service\x1b[0m\n'}
+[3.942031] (depthai_examples) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target rgb_stereo_node\x1b[0m\n'}
+[3.947734] (-) TimerEvent: {}
+[3.961307] (depthai_examples) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target stereo_node\x1b[0m\n'}
+[3.982069] (depthai_examples) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target mobilenet_node\x1b[0m\n'}
+[3.983219] (depthai_examples) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/stereo_inertial_node.dir/src/stereo_inertial_publisher.cpp.o\x1b[0m\n'}
+[4.047954] (-) TimerEvent: {}
+[4.048545] (depthai_examples) StdoutLine: {'line': b'[ 15%] Built target crop_control_service\n'}
+[4.048896] (depthai_examples) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/feature_tracker.dir/src/feature_tracker_publisher.cpp.o\x1b[0m\n'}
+[4.085583] (depthai_examples) StdoutLine: {'line': b'[ 30%] Built target stereo_node\n'}
+[4.108225] (depthai_examples) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/rgb_stereo_node.dir/src/rgb_stereo_node.cpp.o\x1b[0m\n'}
+[4.148161] (-) TimerEvent: {}
+[4.157288] (depthai_examples) StdoutLine: {'line': b'[ 45%] Built target mobilenet_node\n'}
+[4.190345] (depthai_examples) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target yolov4_spatial_node\x1b[0m\n'}
+[4.218749] (depthai_examples) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/yolov4_node.dir/src/yolov4_publisher.cpp.o\x1b[0m\n'}
+[4.248344] (-) TimerEvent: {}
+[4.294035] (depthai_examples) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/tracker_yolov4_node.dir/src/tracker_yolov4_publisher.cpp.o\x1b[0m\n'}
+[4.357911] (-) TimerEvent: {}
+[4.442037] (depthai_examples) StdoutLine: {'line': b'[ 65%] Built target yolov4_spatial_node\n'}
+[4.465894] (-) TimerEvent: {}
+[4.577901] (-) TimerEvent: {}
+[4.588595] (depthai_examples) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/tracker_yolov4_spatial_node.dir/src/tracker_yolov4_spatial_publisher.cpp.o\x1b[0m\n'}
+[4.681904] (-) TimerEvent: {}
+[4.789897] (-) TimerEvent: {}
+[4.890619] (-) TimerEvent: {}
+[4.991786] (-) TimerEvent: {}
+[5.092925] (-) TimerEvent: {}
+[5.194148] (-) TimerEvent: {}
+[5.295348] (-) TimerEvent: {}
+[5.396526] (-) TimerEvent: {}
+[5.497478] (-) TimerEvent: {}
+[5.598788] (-) TimerEvent: {}
+[5.699589] (-) TimerEvent: {}
+[5.806541] (-) TimerEvent: {}
+[5.907591] (-) TimerEvent: {}
+[6.008873] (-) TimerEvent: {}
+[6.110863] (-) TimerEvent: {}
+[6.212856] (-) TimerEvent: {}
+[6.315029] (-) TimerEvent: {}
+[6.416820] (-) TimerEvent: {}
+[6.518536] (-) TimerEvent: {}
+[6.620195] (-) TimerEvent: {}
+[6.721950] (-) TimerEvent: {}
+[6.823612] (-) TimerEvent: {}
+[6.925723] (-) TimerEvent: {}
+[7.027434] (-) TimerEvent: {}
+[7.129193] (-) TimerEvent: {}
+[7.230990] (-) TimerEvent: {}
+[7.332761] (-) TimerEvent: {}
+[7.434554] (-) TimerEvent: {}
+[7.536367] (-) TimerEvent: {}
+[7.638126] (-) TimerEvent: {}
+[7.739800] (-) TimerEvent: {}
+[7.841488] (-) TimerEvent: {}
+[7.943163] (-) TimerEvent: {}
+[8.044889] (-) TimerEvent: {}
+[8.147459] (-) TimerEvent: {}
+[8.250065] (-) TimerEvent: {}
+[8.352306] (-) TimerEvent: {}
+[8.454663] (-) TimerEvent: {}
+[8.556957] (-) TimerEvent: {}
+[8.659508] (-) TimerEvent: {}
+[8.761731] (-) TimerEvent: {}
+[8.864078] (-) TimerEvent: {}
+[8.966369] (-) TimerEvent: {}
+[9.068716] (-) TimerEvent: {}
+[9.170518] (-) TimerEvent: {}
+[9.272287] (-) TimerEvent: {}
+[9.374937] (-) TimerEvent: {}
+[9.477285] (-) TimerEvent: {}
+[9.579816] (-) TimerEvent: {}
+[9.682442] (-) TimerEvent: {}
+[9.784997] (-) TimerEvent: {}
+[9.887501] (-) TimerEvent: {}
+[9.989848] (-) TimerEvent: {}
+[10.092401] (-) TimerEvent: {}
+[10.195044] (-) TimerEvent: {}
+[10.297709] (-) TimerEvent: {}
+[10.400533] (-) TimerEvent: {}
+[10.503400] (-) TimerEvent: {}
+[10.606045] (-) TimerEvent: {}
+[10.708176] (-) TimerEvent: {}
+[10.810265] (-) TimerEvent: {}
+[10.912322] (-) TimerEvent: {}
+[11.014249] (-) TimerEvent: {}
+[11.116148] (-) TimerEvent: {}
+[11.217985] (-) TimerEvent: {}
+[11.319978] (-) TimerEvent: {}
+[11.422042] (-) TimerEvent: {}
+[11.523984] (-) TimerEvent: {}
+[11.625968] (-) TimerEvent: {}
+[11.727917] (-) TimerEvent: {}
+[11.829877] (-) TimerEvent: {}
+[11.931812] (-) TimerEvent: {}
+[12.034263] (-) TimerEvent: {}
+[12.136719] (-) TimerEvent: {}
+[12.239248] (-) TimerEvent: {}
+[12.341788] (-) TimerEvent: {}
+[12.444546] (-) TimerEvent: {}
+[12.547006] (-) TimerEvent: {}
+[12.649484] (-) TimerEvent: {}
+[12.752111] (-) TimerEvent: {}
+[12.854607] (-) TimerEvent: {}
+[12.958796] (-) TimerEvent: {}
+[13.062560] (-) TimerEvent: {}
+[13.165143] (-) TimerEvent: {}
+[13.267818] (-) TimerEvent: {}
+[13.371875] (-) TimerEvent: {}
+[13.473918] (-) TimerEvent: {}
+[13.576009] (-) TimerEvent: {}
+[13.678595] (-) TimerEvent: {}
+[13.781942] (-) TimerEvent: {}
+[13.886429] (-) TimerEvent: {}
+[13.989367] (-) TimerEvent: {}
+[14.091968] (-) TimerEvent: {}
+[14.201636] (-) TimerEvent: {}
+[14.309810] (-) TimerEvent: {}
+[14.411887] (-) TimerEvent: {}
+[14.515111] (-) TimerEvent: {}
+[14.617117] (-) TimerEvent: {}
+[14.719716] (-) TimerEvent: {}
+[14.822245] (-) TimerEvent: {}
+[14.924285] (-) TimerEvent: {}
+[15.026283] (-) TimerEvent: {}
+[15.128316] (-) TimerEvent: {}
+[15.230580] (-) TimerEvent: {}
+[15.332551] (-) TimerEvent: {}
+[15.434536] (-) TimerEvent: {}
+[15.536663] (-) TimerEvent: {}
+[15.638597] (-) TimerEvent: {}
+[15.740904] (-) TimerEvent: {}
+[15.843435] (-) TimerEvent: {}
+[15.945390] (-) TimerEvent: {}
+[16.048035] (-) TimerEvent: {}
+[16.150501] (-) TimerEvent: {}
+[16.252374] (-) TimerEvent: {}
+[16.356793] (-) TimerEvent: {}
+[16.458704] (-) TimerEvent: {}
+[16.560587] (-) TimerEvent: {}
+[16.667417] (-) TimerEvent: {}
+[16.769307] (-) TimerEvent: {}
+[16.871349] (-) TimerEvent: {}
+[16.974292] (-) TimerEvent: {}
+[17.076656] (-) TimerEvent: {}
+[17.179149] (-) TimerEvent: {}
+[17.281069] (-) TimerEvent: {}
+[17.383615] (-) TimerEvent: {}
+[17.486068] (-) TimerEvent: {}
+[17.588617] (-) TimerEvent: {}
+[17.691500] (-) TimerEvent: {}
+[17.794156] (-) TimerEvent: {}
+[17.896025] (-) TimerEvent: {}
+[17.999187] (-) TimerEvent: {}
+[18.101392] (-) TimerEvent: {}
+[18.203286] (-) TimerEvent: {}
+[18.305206] (-) TimerEvent: {}
+[18.407218] (-) TimerEvent: {}
+[18.509190] (-) TimerEvent: {}
+[18.611452] (-) TimerEvent: {}
+[18.714534] (-) TimerEvent: {}
+[18.840636] (-) TimerEvent: {}
+[18.979569] (-) TimerEvent: {}
+[19.208245] (-) TimerEvent: {}
+[19.505028] (-) TimerEvent: {}
+[19.986144] (-) TimerEvent: {}
+[20.113825] (-) TimerEvent: {}
+[20.276732] (-) TimerEvent: {}
+[21.907034] (-) TimerEvent: {}
+[21.954924] (depthai_examples) StderrLine: {'line': b'\x1b[01m\x1b[Kc++:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[KKilled signal terminated program cc1plus\n'}
+[21.959150] (depthai_examples) StderrLine: {'line': b'compilation terminated.\n'}
+[21.959686] (depthai_examples) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/stereo_inertial_node.dir/build.make:76: CMakeFiles/stereo_inertial_node.dir/src/stereo_inertial_publisher.cpp.o] Error 1\n'}
+[21.959968] (depthai_examples) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:233: CMakeFiles/stereo_inertial_node.dir/all] Error 2\n'}
+[21.960156] (depthai_examples) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[22.006837] (-) TimerEvent: {}
+[22.109898] (-) TimerEvent: {}
+[22.210695] (-) TimerEvent: {}
+[22.311540] (-) TimerEvent: {}
+[22.412388] (-) TimerEvent: {}
+[22.513278] (-) TimerEvent: {}
+[22.614098] (-) TimerEvent: {}
+[22.714828] (-) TimerEvent: {}
+[22.815607] (-) TimerEvent: {}
+[22.916368] (-) TimerEvent: {}
+[23.017129] (-) TimerEvent: {}
+[23.117924] (-) TimerEvent: {}
+[23.218671] (-) TimerEvent: {}
+[23.319443] (-) TimerEvent: {}
+[23.420205] (-) TimerEvent: {}
+[23.521009] (-) TimerEvent: {}
+[23.621836] (-) TimerEvent: {}
+[23.724166] (-) TimerEvent: {}
+[23.826478] (-) TimerEvent: {}
+[23.928785] (-) TimerEvent: {}
+[24.031078] (-) TimerEvent: {}
+[24.132926] (-) TimerEvent: {}
+[24.240920] (-) TimerEvent: {}
+[24.350517] (-) TimerEvent: {}
+[24.452346] (-) TimerEvent: {}
+[24.565937] (-) TimerEvent: {}
+[24.669941] (-) TimerEvent: {}
+[24.773942] (-) TimerEvent: {}
+[24.880602] (-) TimerEvent: {}
+[24.982413] (-) TimerEvent: {}
+[25.084263] (-) TimerEvent: {}
+[25.186196] (-) TimerEvent: {}
+[25.288143] (-) TimerEvent: {}
+[25.390349] (-) TimerEvent: {}
+[25.492319] (-) TimerEvent: {}
+[25.594366] (-) TimerEvent: {}
+[25.696634] (-) TimerEvent: {}
+[25.798653] (-) TimerEvent: {}
+[25.901032] (-) TimerEvent: {}
+[26.034039] (-) TimerEvent: {}
+[26.222066] (-) TimerEvent: {}
+[26.357447] (-) TimerEvent: {}
+[26.546248] (-) TimerEvent: {}
+[26.978931] (depthai_examples) StderrLine: {'line': b'\x1b[01m\x1b[Kc++:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[KKilled signal terminated program cc1plus\n'}
+[26.980687] (-) TimerEvent: {}
+[26.981040] (depthai_examples) StderrLine: {'line': b'compilation terminated.\n'}
+[26.985013] (depthai_examples) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/tracker_yolov4_node.dir/build.make:76: CMakeFiles/tracker_yolov4_node.dir/src/tracker_yolov4_publisher.cpp.o] Error 1\n'}
+[26.988395] (depthai_examples) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:363: CMakeFiles/tracker_yolov4_node.dir/all] Error 2\n'}
+[27.080923] (-) TimerEvent: {}
+[27.182402] (-) TimerEvent: {}
+[27.284034] (-) TimerEvent: {}
+[27.386110] (-) TimerEvent: {}
+[27.487585] (-) TimerEvent: {}
+[27.589033] (-) TimerEvent: {}
+[27.672354] (depthai_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/depthai-ros/depthai_examples/src/rgb_stereo_node.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[27.675542] (depthai_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/depthai-ros/depthai_examples/src/rgb_stereo_node.cpp:236:52:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kbool dai::DeviceBase::setIrLaserDotProjectorBrightness(float, int)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: Use setIrLaserDotProjectorIntensity(float intensity) instead. [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[27.678424] (depthai_examples) StderrLine: {'line': b'  236 |             \x1b[01;35m\x1b[Kdevice.setIrLaserDotProjectorBrightness(static_cast<float>(dotProjectormA))\x1b[m\x1b[K;\n'}
+[27.680969] (depthai_examples) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[27.683468] (depthai_examples) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/depthai/device/Device.hpp:14\x1b[m\x1b[K,\n'}
+[27.686127] (depthai_examples) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/depthai-ros/depthai_examples/src/rgb_stereo_node.cpp:17\x1b[m\x1b[K:\n'}
+[27.688578] (depthai_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/depthai/device/DeviceBase.hpp:498:90:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[27.690958] (-) TimerEvent: {}
+[27.692270] (depthai_examples) StderrLine: {'line': b'  498 |     [[deprecated("Use setIrLaserDotProjectorIntensity(float intensity) instead.")]] bool \x1b[01;36m\x1b[KsetIrLaserDotProjectorBrightness\x1b[m\x1b[K(float mA, int mask = -1);\n'}
+[27.694992] (depthai_examples) StderrLine: {'line': b'      |                                                                                          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[27.698579] (depthai_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/workspaces/depthai-ros/depthai_examples/src/rgb_stereo_node.cpp:242:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kbool dai::DeviceBase::setIrFloodLightBrightness(float, int)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: Use setIrFloodLightIntensity(float intensity) instead. [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[27.703460] (depthai_examples) StderrLine: {'line': b'  242 |             \x1b[01;35m\x1b[Kdevice.setIrFloodLightBrightness(static_cast<float>(floodLightmA))\x1b[m\x1b[K;\n'}
+[27.705964] (depthai_examples) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[27.708395] (depthai_examples) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/depthai/device/Device.hpp:14\x1b[m\x1b[K,\n'}
+[27.710824] (depthai_examples) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspaces/depthai-ros/depthai_examples/src/rgb_stereo_node.cpp:17\x1b[m\x1b[K:\n'}
+[27.713247] (depthai_examples) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/depthai/device/DeviceBase.hpp:510:83:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[27.723544] (depthai_examples) StderrLine: {'line': b'  510 |     [[deprecated("Use setIrFloodLightIntensity(float intensity) instead.")]] bool \x1b[01;36m\x1b[KsetIrFloodLightBrightness\x1b[m\x1b[K(float mA, int mask = -1);\n'}
+[27.726247] (depthai_examples) StderrLine: {'line': b'      |                                                                                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[27.791186] (-) TimerEvent: {}
+[27.893137] (-) TimerEvent: {}
+[27.995156] (-) TimerEvent: {}
+[28.097291] (-) TimerEvent: {}
+[28.199442] (-) TimerEvent: {}
+[28.302164] (-) TimerEvent: {}
+[28.404054] (-) TimerEvent: {}
+[28.505984] (-) TimerEvent: {}
+[28.607993] (-) TimerEvent: {}
+[28.710230] (-) TimerEvent: {}
+[28.812375] (-) TimerEvent: {}
+[28.914767] (-) TimerEvent: {}
+[29.016930] (-) TimerEvent: {}
+[29.118005] (-) TimerEvent: {}
+[29.219932] (-) TimerEvent: {}
+[29.321051] (-) TimerEvent: {}
+[29.422273] (-) TimerEvent: {}
+[29.523511] (-) TimerEvent: {}
+[29.624668] (-) TimerEvent: {}
+[29.725709] (-) TimerEvent: {}
+[29.826778] (-) TimerEvent: {}
+[29.927894] (-) TimerEvent: {}
+[30.028653] (-) TimerEvent: {}
+[30.130037] (-) TimerEvent: {}
+[30.231095] (-) TimerEvent: {}
+[30.332849] (-) TimerEvent: {}
+[30.434056] (-) TimerEvent: {}
+[30.535272] (-) TimerEvent: {}
+[30.636366] (-) TimerEvent: {}
+[30.737461] (-) TimerEvent: {}
+[30.839015] (-) TimerEvent: {}
+[30.941136] (-) TimerEvent: {}
+[31.042785] (-) TimerEvent: {}
+[31.144458] (-) TimerEvent: {}
+[31.246101] (-) TimerEvent: {}
+[31.347572] (-) TimerEvent: {}
+[31.448846] (-) TimerEvent: {}
+[31.551197] (-) TimerEvent: {}
+[31.652881] (-) TimerEvent: {}
+[31.754957] (-) TimerEvent: {}
+[31.857098] (-) TimerEvent: {}
+[31.959072] (-) TimerEvent: {}
+[32.060278] (-) TimerEvent: {}
+[32.161790] (-) TimerEvent: {}
+[32.263244] (-) TimerEvent: {}
+[32.364704] (-) TimerEvent: {}
+[32.466602] (-) TimerEvent: {}
+[32.568602] (-) TimerEvent: {}
+[32.670084] (-) TimerEvent: {}
+[32.771613] (-) TimerEvent: {}
+[32.874205] (-) TimerEvent: {}
+[32.975678] (-) TimerEvent: {}
+[33.078277] (-) TimerEvent: {}
+[33.181074] (-) TimerEvent: {}
+[33.283615] (-) TimerEvent: {}
+[33.385071] (-) TimerEvent: {}
+[33.486523] (-) TimerEvent: {}
+[33.587967] (-) TimerEvent: {}
+[33.689180] (-) TimerEvent: {}
+[33.790598] (-) TimerEvent: {}
+[33.891955] (-) TimerEvent: {}
+[33.993565] (-) TimerEvent: {}
+[34.095783] (-) TimerEvent: {}
+[34.197823] (-) TimerEvent: {}
+[34.300191] (-) TimerEvent: {}
+[34.402868] (-) TimerEvent: {}
+[34.505645] (-) TimerEvent: {}
+[34.608064] (-) TimerEvent: {}
+[34.710938] (-) TimerEvent: {}
+[34.813339] (-) TimerEvent: {}
+[34.914719] (-) TimerEvent: {}
+[35.016632] (-) TimerEvent: {}
+[35.119185] (-) TimerEvent: {}
+[35.220665] (-) TimerEvent: {}
+[35.322072] (-) TimerEvent: {}
+[35.425391] (-) TimerEvent: {}
+[35.527928] (-) TimerEvent: {}
+[35.630440] (-) TimerEvent: {}
+[35.735011] (-) TimerEvent: {}
+[35.837030] (-) TimerEvent: {}
+[35.938840] (-) TimerEvent: {}
+[36.041500] (-) TimerEvent: {}
+[36.149869] (-) TimerEvent: {}
+[36.524601] (-) TimerEvent: {}
+[37.364533] (-) TimerEvent: {}
+[37.597263] (-) TimerEvent: {}
+[38.409387] (-) TimerEvent: {}
+[38.520432] (-) TimerEvent: {}
+[38.622678] (-) TimerEvent: {}
+[38.691331] (depthai_examples) StderrLine: {'line': b'\x1b[01m\x1b[Kc++:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[KKilled signal terminated program cc1plus\n'}
+[38.693972] (depthai_examples) StderrLine: {'line': b'compilation terminated.\n'}
+[38.696896] (depthai_examples) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/tracker_yolov4_spatial_node.dir/build.make:76: CMakeFiles/tracker_yolov4_spatial_node.dir/src/tracker_yolov4_spatial_publisher.cpp.o] Error 1\n'}
+[38.699169] (depthai_examples) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:389: CMakeFiles/tracker_yolov4_spatial_node.dir/all] Error 2\n'}
+[38.722857] (-) TimerEvent: {}
+[38.823644] (-) TimerEvent: {}
+[38.924578] (-) TimerEvent: {}
+[39.026181] (-) TimerEvent: {}
+[39.134130] (-) TimerEvent: {}
+[39.235645] (-) TimerEvent: {}
+[39.336892] (-) TimerEvent: {}
+[39.437669] (-) TimerEvent: {}
+[39.538530] (-) TimerEvent: {}
+[39.641154] (-) TimerEvent: {}
+[39.743217] (-) TimerEvent: {}
+[39.848516] (-) TimerEvent: {}
+[39.949937] (-) TimerEvent: {}
+[40.050673] (-) TimerEvent: {}
+[40.153929] (-) TimerEvent: {}
+[40.254669] (-) TimerEvent: {}
+[40.355444] (-) TimerEvent: {}
+[40.456695] (-) TimerEvent: {}
+[40.557924] (-) TimerEvent: {}
+[40.658763] (-) TimerEvent: {}
+[40.759524] (-) TimerEvent: {}
+[40.860569] (-) TimerEvent: {}
+[40.965966] (-) TimerEvent: {}
+[41.068084] (-) TimerEvent: {}
+[41.168821] (-) TimerEvent: {}
+[41.269594] (-) TimerEvent: {}
+[41.370410] (-) TimerEvent: {}
+[41.471798] (-) TimerEvent: {}
+[41.572914] (-) TimerEvent: {}
+[41.673640] (-) TimerEvent: {}
+[41.774379] (-) TimerEvent: {}
+[41.881943] (-) TimerEvent: {}
+[41.982717] (-) TimerEvent: {}
+[42.086010] (-) TimerEvent: {}
+[42.186938] (-) TimerEvent: {}
+[42.287673] (-) TimerEvent: {}
+[42.388373] (-) TimerEvent: {}
+[42.489364] (-) TimerEvent: {}
+[42.590404] (-) TimerEvent: {}
+[42.691386] (-) TimerEvent: {}
+[42.792361] (-) TimerEvent: {}
+[42.893563] (-) TimerEvent: {}
+[42.994556] (-) TimerEvent: {}
+[43.095752] (-) TimerEvent: {}
+[43.196758] (-) TimerEvent: {}
+[43.297771] (-) TimerEvent: {}
+[43.398958] (-) TimerEvent: {}
+[43.499932] (-) TimerEvent: {}
+[43.600919] (-) TimerEvent: {}
+[43.702483] (-) TimerEvent: {}
+[43.803501] (-) TimerEvent: {}
+[43.904472] (-) TimerEvent: {}
+[44.005471] (-) TimerEvent: {}
+[44.106480] (-) TimerEvent: {}
+[44.207446] (-) TimerEvent: {}
+[44.308447] (-) TimerEvent: {}
+[44.410634] (-) TimerEvent: {}
+[44.516201] (-) TimerEvent: {}
+[44.617916] (-) TimerEvent: {}
+[44.618912] (depthai_examples) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable rgb_stereo_node\x1b[0m\n'}
+[44.718107] (-) TimerEvent: {}
+[44.818892] (-) TimerEvent: {}
+[44.920438] (-) TimerEvent: {}
+[45.021686] (-) TimerEvent: {}
+[45.122904] (-) TimerEvent: {}
+[45.224087] (-) TimerEvent: {}
+[45.325789] (-) TimerEvent: {}
+[45.426856] (-) TimerEvent: {}
+[45.528101] (-) TimerEvent: {}
+[45.553869] (depthai_examples) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX executable yolov4_node\x1b[0m\n'}
+[45.628306] (-) TimerEvent: {}
+[45.729914] (-) TimerEvent: {}
+[45.831494] (-) TimerEvent: {}
+[45.933428] (-) TimerEvent: {}
+[46.035606] (-) TimerEvent: {}
+[46.137979] (-) TimerEvent: {}
+[46.244189] (-) TimerEvent: {}
+[46.345624] (-) TimerEvent: {}
+[46.447128] (-) TimerEvent: {}
+[46.549037] (-) TimerEvent: {}
+[46.650396] (-) TimerEvent: {}
+[46.751120] (-) TimerEvent: {}
+[46.852883] (-) TimerEvent: {}
+[46.927314] (depthai_examples) StdoutLine: {'line': b'[ 80%] Built target rgb_stereo_node\n'}
+[46.953087] (-) TimerEvent: {}
+[47.064268] (-) TimerEvent: {}
+[47.165963] (-) TimerEvent: {}
+[47.269937] (-) TimerEvent: {}
+[47.370977] (-) TimerEvent: {}
+[47.471932] (-) TimerEvent: {}
+[47.573522] (-) TimerEvent: {}
+[47.574355] (depthai_examples) StdoutLine: {'line': b'[ 80%] Built target yolov4_node\n'}
+[47.673572] (-) TimerEvent: {}
+[47.774576] (-) TimerEvent: {}
+[47.875547] (-) TimerEvent: {}
+[47.976546] (-) TimerEvent: {}
+[48.078069] (-) TimerEvent: {}
+[48.179120] (-) TimerEvent: {}
+[48.279995] (-) TimerEvent: {}
+[48.381501] (-) TimerEvent: {}
+[48.483063] (-) TimerEvent: {}
+[48.584532] (-) TimerEvent: {}
+[48.686044] (-) TimerEvent: {}
+[48.787530] (-) TimerEvent: {}
+[48.889000] (-) TimerEvent: {}
+[48.990558] (-) TimerEvent: {}
+[49.091765] (-) TimerEvent: {}
+[49.190349] (depthai_examples) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX executable feature_tracker\x1b[0m\n'}
+[49.191817] (-) TimerEvent: {}
+[49.292324] (-) TimerEvent: {}
+[49.393350] (-) TimerEvent: {}
+[49.494579] (-) TimerEvent: {}
+[49.595571] (-) TimerEvent: {}
+[49.696690] (-) TimerEvent: {}
+[49.797798] (-) TimerEvent: {}
+[49.898599] (-) TimerEvent: {}
+[49.999371] (-) TimerEvent: {}
+[50.100159] (-) TimerEvent: {}
+[50.201037] (-) TimerEvent: {}
+[50.302016] (-) TimerEvent: {}
+[50.402938] (-) TimerEvent: {}
+[50.503793] (-) TimerEvent: {}
+[50.604679] (-) TimerEvent: {}
+[50.705366] (-) TimerEvent: {}
+[50.804564] (depthai_examples) StdoutLine: {'line': b'[ 85%] Built target feature_tracker\n'}
+[50.805449] (-) TimerEvent: {}
+[50.808649] (depthai_examples) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[50.834308] (depthai_examples) CommandEnded: {'returncode': 2}
+[50.905654] (-) TimerEvent: {}
+[50.953585] (depthai_examples) JobEnded: {'identifier': 'depthai_examples', 'rc': 2}
+[50.968400] (depthai_ros_driver) JobSkipped: {'identifier': 'depthai_ros_driver'}
+[50.968914] (depthai-ros) JobSkipped: {'identifier': 'depthai-ros'}
+[50.969337] (-) EventReactorShutdown: {}

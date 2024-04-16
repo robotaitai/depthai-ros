@@ -1,0 +1,52 @@
+[35m[1mConsolidate compiler generated dependencies of target crop_control_service[0m
+[35m[1mConsolidate compiler generated dependencies of target rgb_stereo_node[0m
+[35m[1mConsolidate compiler generated dependencies of target stereo_node[0m
+[35m[1mConsolidate compiler generated dependencies of target mobilenet_node[0m
+[  5%] [32mBuilding CXX object CMakeFiles/stereo_inertial_node.dir/src/stereo_inertial_publisher.cpp.o[0m
+[ 15%] Built target crop_control_service
+[ 20%] [32mBuilding CXX object CMakeFiles/feature_tracker.dir/src/feature_tracker_publisher.cpp.o[0m
+[ 30%] Built target stereo_node
+[ 35%] [32mBuilding CXX object CMakeFiles/rgb_stereo_node.dir/src/rgb_stereo_node.cpp.o[0m
+[ 45%] Built target mobilenet_node
+[35m[1mConsolidate compiler generated dependencies of target yolov4_spatial_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/yolov4_node.dir/src/yolov4_publisher.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/tracker_yolov4_node.dir/src/tracker_yolov4_publisher.cpp.o[0m
+[ 65%] Built target yolov4_spatial_node
+[ 70%] [32mBuilding CXX object CMakeFiles/tracker_yolov4_spatial_node.dir/src/tracker_yolov4_spatial_publisher.cpp.o[0m
+[01m[Kc++:[m[K [01;31m[Kfatal error: [m[KKilled signal terminated program cc1plus
+compilation terminated.
+gmake[2]: *** [CMakeFiles/stereo_inertial_node.dir/build.make:76: CMakeFiles/stereo_inertial_node.dir/src/stereo_inertial_publisher.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:233: CMakeFiles/stereo_inertial_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[01m[Kc++:[m[K [01;31m[Kfatal error: [m[KKilled signal terminated program cc1plus
+compilation terminated.
+gmake[2]: *** [CMakeFiles/tracker_yolov4_node.dir/build.make:76: CMakeFiles/tracker_yolov4_node.dir/src/tracker_yolov4_publisher.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:363: CMakeFiles/tracker_yolov4_node.dir/all] Error 2
+[01m[K/workspaces/depthai-ros/depthai_examples/src/rgb_stereo_node.cpp:[m[K In lambda function:
+[01m[K/workspaces/depthai-ros/depthai_examples/src/rgb_stereo_node.cpp:236:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool dai::DeviceBase::setIrLaserDotProjectorBrightness(float, int)[m[K’ is deprecated: Use setIrLaserDotProjectorIntensity(float intensity) instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  236 |             [01;35m[Kdevice.setIrLaserDotProjectorBrightness(static_cast<float>(dotProjectormA))[m[K;
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/depthai/device/Device.hpp:14[m[K,
+                 from [01m[K/workspaces/depthai-ros/depthai_examples/src/rgb_stereo_node.cpp:17[m[K:
+[01m[K/opt/ros/humble/include/depthai/device/DeviceBase.hpp:498:90:[m[K [01;36m[Knote: [m[Kdeclared here
+  498 |     [[deprecated("Use setIrLaserDotProjectorIntensity(float intensity) instead.")]] bool [01;36m[KsetIrLaserDotProjectorBrightness[m[K(float mA, int mask = -1);
+      |                                                                                          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/workspaces/depthai-ros/depthai_examples/src/rgb_stereo_node.cpp:242:45:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool dai::DeviceBase::setIrFloodLightBrightness(float, int)[m[K’ is deprecated: Use setIrFloodLightIntensity(float intensity) instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  242 |             [01;35m[Kdevice.setIrFloodLightBrightness(static_cast<float>(floodLightmA))[m[K;
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/depthai/device/Device.hpp:14[m[K,
+                 from [01m[K/workspaces/depthai-ros/depthai_examples/src/rgb_stereo_node.cpp:17[m[K:
+[01m[K/opt/ros/humble/include/depthai/device/DeviceBase.hpp:510:83:[m[K [01;36m[Knote: [m[Kdeclared here
+  510 |     [[deprecated("Use setIrFloodLightIntensity(float intensity) instead.")]] bool [01;36m[KsetIrFloodLightBrightness[m[K(float mA, int mask = -1);
+      |                                                                                   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Kc++:[m[K [01;31m[Kfatal error: [m[KKilled signal terminated program cc1plus
+compilation terminated.
+gmake[2]: *** [CMakeFiles/tracker_yolov4_spatial_node.dir/build.make:76: CMakeFiles/tracker_yolov4_spatial_node.dir/src/tracker_yolov4_spatial_publisher.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:389: CMakeFiles/tracker_yolov4_spatial_node.dir/all] Error 2
+[ 75%] [32m[1mLinking CXX executable rgb_stereo_node[0m
+[ 80%] [32m[1mLinking CXX executable yolov4_node[0m
+[ 80%] Built target rgb_stereo_node
+[ 80%] Built target yolov4_node
+[ 85%] [32m[1mLinking CXX executable feature_tracker[0m
+[ 85%] Built target feature_tracker
+gmake: *** [Makefile:146: all] Error 2

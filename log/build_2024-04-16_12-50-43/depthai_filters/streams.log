@@ -1,0 +1,48 @@
+[0.030s] Invoking command in '/workspaces/depthai-ros/build/depthai_filters': AMENT_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs:/ws/install:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/depthai-ros/build/depthai_filters -- -j6 -l6
+[0.142s] [35m[1mConsolidate compiler generated dependencies of target depthai_filters[0m
+[0.451s] [100%] Built target depthai_filters
+[0.505s] Invoked command in '/workspaces/depthai-ros/build/depthai_filters' returned '0': AMENT_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs:/ws/install:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/depthai-ros/build/depthai_filters -- -j6 -l6
+[0.645s] Invoking command in '/workspaces/depthai-ros/build/depthai_filters': AMENT_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs:/ws/install:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/depthai-ros/build/depthai_filters
+[0.679s] -- Install configuration: ""
+[0.680s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/launch
+[0.680s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/launch/example_wls_filter.launch.py
+[0.680s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/launch/example_feature_tracker.launch.py
+[0.680s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/launch/example_feature_3d.launch.py
+[0.680s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/launch/example_seg_overlay.launch.py
+[0.680s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/launch/spatial_bb.launch.py
+[0.681s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/launch/example_det2d_overlay.launch.py
+[0.681s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/launch/det2d_usb_cam_overlay.launch.py
+[0.681s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/config
+[0.681s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/config/usb_cam_overlay.yaml
+[0.682s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/config/spatial_bb.yaml
+[0.682s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/config/detection.yaml
+[0.682s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/config/wls.yaml
+[0.682s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/config/feature_tracker.yaml
+[0.682s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/lib/libdepthai_filters.so
+[0.682s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/include
+[0.683s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/include/depthai_filters
+[0.683s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/include/depthai_filters/detection2d_overlay.hpp
+[0.683s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/include/depthai_filters/features_3d.hpp
+[0.683s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/include/depthai_filters/spatial_bb.hpp
+[0.683s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/include/depthai_filters/segmentation_overlay.hpp
+[0.683s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/include/depthai_filters/wls_filter.hpp
+[0.683s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/include/depthai_filters/feature_tracker_overlay.hpp
+[0.684s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/include/depthai_filters/utils.hpp
+[0.684s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/ament_index/resource_index/package_run_dependencies/depthai_filters
+[0.684s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/ament_index/resource_index/parent_prefix_path/depthai_filters
+[0.684s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/environment/ament_prefix_path.sh
+[0.684s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/environment/ament_prefix_path.dsv
+[0.684s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/environment/path.sh
+[0.685s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/environment/path.dsv
+[0.685s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/local_setup.bash
+[0.685s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/local_setup.sh
+[0.685s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/local_setup.zsh
+[0.685s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/local_setup.dsv
+[0.685s] -- Installing: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/package.dsv
+[0.689s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/ament_index/resource_index/packages/depthai_filters
+[0.689s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/ament_index/resource_index/rclcpp_components/depthai_filters
+[0.689s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.689s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/cmake/depthai_filtersConfig.cmake
+[0.689s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/cmake/depthai_filtersConfig-version.cmake
+[0.690s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/package.xml
+[0.708s] Invoked command in '/workspaces/depthai-ros/build/depthai_filters' returned '0': AMENT_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs:/ws/install:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/depthai-ros/build/depthai_filters

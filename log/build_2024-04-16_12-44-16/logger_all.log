@@ -1,0 +1,443 @@
+[0.246s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.246s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff8a9e6d10>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff8ab23460>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff8ab23460>>, mixin_verb=('build',))
+[0.501s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.503s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[0.504s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[0.504s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.504s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.504s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.504s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.504s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.504s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/workspaces/depthai-ros'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(depthai-ros) by extensions ['ignore', 'ignore_ament_install']
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(depthai-ros) by extension 'ignore'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(depthai-ros) by extension 'ignore_ament_install'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(depthai-ros) by extensions ['colcon_pkg']
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(depthai-ros) by extension 'colcon_pkg'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(depthai-ros) by extensions ['colcon_meta']
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(depthai-ros) by extension 'colcon_meta'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(depthai-ros) by extensions ['ros']
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(depthai-ros) by extension 'ros'
+[0.537s] DEBUG:colcon.colcon_core.package_identification:Package 'depthai-ros' with type 'ros.ament_cmake' and name 'depthai-ros'
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_bridge) by extension 'ignore'
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_bridge) by extension 'ignore_ament_install'
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_bridge) by extensions ['colcon_pkg']
+[0.537s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_bridge) by extension 'colcon_pkg'
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_bridge) by extensions ['colcon_meta']
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_bridge) by extension 'colcon_meta'
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_bridge) by extensions ['ros']
+[0.538s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_bridge) by extension 'ros'
+[0.541s] DEBUG:colcon.colcon_core.package_identification:Package 'depthai_bridge' with type 'ros.ament_cmake' and name 'depthai_bridge'
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_descriptions) by extensions ['ignore', 'ignore_ament_install']
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_descriptions) by extension 'ignore'
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_descriptions) by extension 'ignore_ament_install'
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_descriptions) by extensions ['colcon_pkg']
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_descriptions) by extension 'colcon_pkg'
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_descriptions) by extensions ['colcon_meta']
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_descriptions) by extension 'colcon_meta'
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_descriptions) by extensions ['ros']
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_descriptions) by extension 'ros'
+[0.543s] DEBUG:colcon.colcon_core.package_identification:Package 'depthai_descriptions' with type 'ros.ament_cmake' and name 'depthai_descriptions'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_examples) by extensions ['ignore', 'ignore_ament_install']
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_examples) by extension 'ignore'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_examples) by extension 'ignore_ament_install'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_examples) by extensions ['colcon_pkg']
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_examples) by extension 'colcon_pkg'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_examples) by extensions ['colcon_meta']
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_examples) by extension 'colcon_meta'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_examples) by extensions ['ros']
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_examples) by extension 'ros'
+[0.547s] DEBUG:colcon.colcon_core.package_identification:Package 'depthai_examples' with type 'ros.ament_cmake' and name 'depthai_examples'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_filters) by extensions ['ignore', 'ignore_ament_install']
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_filters) by extension 'ignore'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_filters) by extension 'ignore_ament_install'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_filters) by extensions ['colcon_pkg']
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_filters) by extension 'colcon_pkg'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_filters) by extensions ['colcon_meta']
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_filters) by extension 'colcon_meta'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_filters) by extensions ['ros']
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_filters) by extension 'ros'
+[0.550s] DEBUG:colcon.colcon_core.package_identification:Package 'depthai_filters' with type 'ros.ament_cmake' and name 'depthai_filters'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_ros_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_ros_driver) by extension 'ignore'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_ros_driver) by extension 'ignore_ament_install'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_ros_driver) by extensions ['colcon_pkg']
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_ros_driver) by extension 'colcon_pkg'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_ros_driver) by extensions ['colcon_meta']
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_ros_driver) by extension 'colcon_meta'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_ros_driver) by extensions ['ros']
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_ros_driver) by extension 'ros'
+[0.555s] DEBUG:colcon.colcon_core.package_identification:Package 'depthai_ros_driver' with type 'ros.ament_cmake' and name 'depthai_ros_driver'
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_ros_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_ros_msgs) by extension 'ignore'
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_ros_msgs) by extension 'ignore_ament_install'
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_ros_msgs) by extensions ['colcon_pkg']
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_ros_msgs) by extension 'colcon_pkg'
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_ros_msgs) by extensions ['colcon_meta']
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_ros_msgs) by extension 'colcon_meta'
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_ros_msgs) by extensions ['ros']
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(depthai_ros_msgs) by extension 'ros'
+[0.558s] DEBUG:colcon.colcon_core.package_identification:Package 'depthai_ros_msgs' with type 'ros.ament_cmake' and name 'depthai_ros_msgs'
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ignore', 'ignore_ament_install']
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore'
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore_ament_install'
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_pkg']
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_pkg'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_meta']
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_meta'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ros']
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ros'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['cmake', 'python']
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'cmake'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['python_setup_py']
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python_setup_py'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.560s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.560s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.561s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.561s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.561s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.606s] Level 5:colcon.colcon_core.verb:set package 'depthai_descriptions' build argument 'cmake_args' from command line to 'None'
+[0.606s] Level 5:colcon.colcon_core.verb:set package 'depthai_descriptions' build argument 'cmake_target' from command line to 'None'
+[0.606s] Level 5:colcon.colcon_core.verb:set package 'depthai_descriptions' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.606s] Level 5:colcon.colcon_core.verb:set package 'depthai_descriptions' build argument 'cmake_clean_cache' from command line to 'False'
+[0.606s] Level 5:colcon.colcon_core.verb:set package 'depthai_descriptions' build argument 'cmake_clean_first' from command line to 'False'
+[0.606s] Level 5:colcon.colcon_core.verb:set package 'depthai_descriptions' build argument 'cmake_force_configure' from command line to 'False'
+[0.606s] Level 5:colcon.colcon_core.verb:set package 'depthai_descriptions' build argument 'ament_cmake_args' from command line to 'None'
+[0.606s] Level 5:colcon.colcon_core.verb:set package 'depthai_descriptions' build argument 'catkin_cmake_args' from command line to 'None'
+[0.606s] Level 5:colcon.colcon_core.verb:set package 'depthai_descriptions' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.607s] DEBUG:colcon.colcon_core.verb:Building package 'depthai_descriptions' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/depthai-ros/build/depthai_descriptions', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/depthai-ros/install/depthai_descriptions', 'merge_install': False, 'path': '/workspaces/depthai-ros/depthai_descriptions', 'symlink_install': False, 'test_result_base': None}
+[0.607s] Level 5:colcon.colcon_core.verb:set package 'depthai_ros_msgs' build argument 'cmake_args' from command line to 'None'
+[0.607s] Level 5:colcon.colcon_core.verb:set package 'depthai_ros_msgs' build argument 'cmake_target' from command line to 'None'
+[0.607s] Level 5:colcon.colcon_core.verb:set package 'depthai_ros_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.607s] Level 5:colcon.colcon_core.verb:set package 'depthai_ros_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.607s] Level 5:colcon.colcon_core.verb:set package 'depthai_ros_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.608s] Level 5:colcon.colcon_core.verb:set package 'depthai_ros_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.608s] Level 5:colcon.colcon_core.verb:set package 'depthai_ros_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.608s] Level 5:colcon.colcon_core.verb:set package 'depthai_ros_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.608s] Level 5:colcon.colcon_core.verb:set package 'depthai_ros_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.608s] DEBUG:colcon.colcon_core.verb:Building package 'depthai_ros_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/depthai-ros/build/depthai_ros_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/depthai-ros/install/depthai_ros_msgs', 'merge_install': False, 'path': '/workspaces/depthai-ros/depthai_ros_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.608s] Level 5:colcon.colcon_core.verb:set package 'depthai_bridge' build argument 'cmake_args' from command line to 'None'
+[0.608s] Level 5:colcon.colcon_core.verb:set package 'depthai_bridge' build argument 'cmake_target' from command line to 'None'
+[0.609s] Level 5:colcon.colcon_core.verb:set package 'depthai_bridge' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.609s] Level 5:colcon.colcon_core.verb:set package 'depthai_bridge' build argument 'cmake_clean_cache' from command line to 'False'
+[0.609s] Level 5:colcon.colcon_core.verb:set package 'depthai_bridge' build argument 'cmake_clean_first' from command line to 'False'
+[0.609s] Level 5:colcon.colcon_core.verb:set package 'depthai_bridge' build argument 'cmake_force_configure' from command line to 'False'
+[0.609s] Level 5:colcon.colcon_core.verb:set package 'depthai_bridge' build argument 'ament_cmake_args' from command line to 'None'
+[0.609s] Level 5:colcon.colcon_core.verb:set package 'depthai_bridge' build argument 'catkin_cmake_args' from command line to 'None'
+[0.609s] Level 5:colcon.colcon_core.verb:set package 'depthai_bridge' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.609s] DEBUG:colcon.colcon_core.verb:Building package 'depthai_bridge' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/depthai-ros/build/depthai_bridge', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/depthai-ros/install/depthai_bridge', 'merge_install': False, 'path': '/workspaces/depthai-ros/depthai_bridge', 'symlink_install': False, 'test_result_base': None}
+[0.610s] Level 5:colcon.colcon_core.verb:set package 'depthai_filters' build argument 'cmake_args' from command line to 'None'
+[0.610s] Level 5:colcon.colcon_core.verb:set package 'depthai_filters' build argument 'cmake_target' from command line to 'None'
+[0.610s] Level 5:colcon.colcon_core.verb:set package 'depthai_filters' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.610s] Level 5:colcon.colcon_core.verb:set package 'depthai_filters' build argument 'cmake_clean_cache' from command line to 'False'
+[0.610s] Level 5:colcon.colcon_core.verb:set package 'depthai_filters' build argument 'cmake_clean_first' from command line to 'False'
+[0.610s] Level 5:colcon.colcon_core.verb:set package 'depthai_filters' build argument 'cmake_force_configure' from command line to 'False'
+[0.610s] Level 5:colcon.colcon_core.verb:set package 'depthai_filters' build argument 'ament_cmake_args' from command line to 'None'
+[0.610s] Level 5:colcon.colcon_core.verb:set package 'depthai_filters' build argument 'catkin_cmake_args' from command line to 'None'
+[0.610s] Level 5:colcon.colcon_core.verb:set package 'depthai_filters' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.610s] DEBUG:colcon.colcon_core.verb:Building package 'depthai_filters' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/depthai-ros/build/depthai_filters', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/depthai-ros/install/depthai_filters', 'merge_install': False, 'path': '/workspaces/depthai-ros/depthai_filters', 'symlink_install': False, 'test_result_base': None}
+[0.611s] Level 5:colcon.colcon_core.verb:set package 'depthai_examples' build argument 'cmake_args' from command line to 'None'
+[0.611s] Level 5:colcon.colcon_core.verb:set package 'depthai_examples' build argument 'cmake_target' from command line to 'None'
+[0.611s] Level 5:colcon.colcon_core.verb:set package 'depthai_examples' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.611s] Level 5:colcon.colcon_core.verb:set package 'depthai_examples' build argument 'cmake_clean_cache' from command line to 'False'
+[0.611s] Level 5:colcon.colcon_core.verb:set package 'depthai_examples' build argument 'cmake_clean_first' from command line to 'False'
+[0.611s] Level 5:colcon.colcon_core.verb:set package 'depthai_examples' build argument 'cmake_force_configure' from command line to 'False'
+[0.611s] Level 5:colcon.colcon_core.verb:set package 'depthai_examples' build argument 'ament_cmake_args' from command line to 'None'
+[0.611s] Level 5:colcon.colcon_core.verb:set package 'depthai_examples' build argument 'catkin_cmake_args' from command line to 'None'
+[0.611s] Level 5:colcon.colcon_core.verb:set package 'depthai_examples' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.611s] DEBUG:colcon.colcon_core.verb:Building package 'depthai_examples' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/depthai-ros/build/depthai_examples', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/depthai-ros/install/depthai_examples', 'merge_install': False, 'path': '/workspaces/depthai-ros/depthai_examples', 'symlink_install': False, 'test_result_base': None}
+[0.612s] Level 5:colcon.colcon_core.verb:set package 'depthai_ros_driver' build argument 'cmake_args' from command line to 'None'
+[0.612s] Level 5:colcon.colcon_core.verb:set package 'depthai_ros_driver' build argument 'cmake_target' from command line to 'None'
+[0.612s] Level 5:colcon.colcon_core.verb:set package 'depthai_ros_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.612s] Level 5:colcon.colcon_core.verb:set package 'depthai_ros_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.612s] Level 5:colcon.colcon_core.verb:set package 'depthai_ros_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.612s] Level 5:colcon.colcon_core.verb:set package 'depthai_ros_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.612s] Level 5:colcon.colcon_core.verb:set package 'depthai_ros_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.612s] Level 5:colcon.colcon_core.verb:set package 'depthai_ros_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.612s] Level 5:colcon.colcon_core.verb:set package 'depthai_ros_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.612s] DEBUG:colcon.colcon_core.verb:Building package 'depthai_ros_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/depthai-ros/build/depthai_ros_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/depthai-ros/install/depthai_ros_driver', 'merge_install': False, 'path': '/workspaces/depthai-ros/depthai_ros_driver', 'symlink_install': False, 'test_result_base': None}
+[0.613s] Level 5:colcon.colcon_core.verb:set package 'depthai-ros' build argument 'cmake_args' from command line to 'None'
+[0.613s] Level 5:colcon.colcon_core.verb:set package 'depthai-ros' build argument 'cmake_target' from command line to 'None'
+[0.613s] Level 5:colcon.colcon_core.verb:set package 'depthai-ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.613s] Level 5:colcon.colcon_core.verb:set package 'depthai-ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.613s] Level 5:colcon.colcon_core.verb:set package 'depthai-ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.613s] Level 5:colcon.colcon_core.verb:set package 'depthai-ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.613s] Level 5:colcon.colcon_core.verb:set package 'depthai-ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.613s] Level 5:colcon.colcon_core.verb:set package 'depthai-ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.613s] Level 5:colcon.colcon_core.verb:set package 'depthai-ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.614s] DEBUG:colcon.colcon_core.verb:Building package 'depthai-ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/depthai-ros/build/depthai-ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/depthai-ros/install/depthai-ros', 'merge_install': False, 'path': '/workspaces/depthai-ros/depthai-ros', 'symlink_install': False, 'test_result_base': None}
+[0.614s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.617s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.617s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/depthai-ros/depthai_ros_msgs' with build type 'ament_cmake'
+[0.618s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/depthai-ros/depthai_ros_msgs'
+[0.624s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.624s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.624s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.634s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/depthai-ros/depthai_descriptions' with build type 'ament_cmake'
+[0.635s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/depthai-ros/depthai_descriptions'
+[0.635s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.635s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.648s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/depthai-ros/build/depthai_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /workspaces/depthai-ros/depthai_ros_msgs -DCMAKE_INSTALL_PREFIX=/workspaces/depthai-ros/install/depthai_ros_msgs
+[0.660s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/depthai-ros/build/depthai_descriptions': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /workspaces/depthai-ros/depthai_descriptions -DCMAKE_INSTALL_PREFIX=/workspaces/depthai-ros/install/depthai_descriptions
+[1.948s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/depthai-ros/build/depthai_descriptions' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /workspaces/depthai-ros/depthai_descriptions -DCMAKE_INSTALL_PREFIX=/workspaces/depthai-ros/install/depthai_descriptions
+[1.952s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/depthai-ros/build/depthai_descriptions': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspaces/depthai-ros/build/depthai_descriptions -- -j6 -l6
+[2.023s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/depthai-ros/build/depthai_descriptions' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspaces/depthai-ros/build/depthai_descriptions -- -j6 -l6
+[2.080s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/depthai-ros/build/depthai_descriptions': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /workspaces/depthai-ros/build/depthai_descriptions
+[2.301s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(depthai_descriptions)
+[2.303s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/depthai-ros/build/depthai_descriptions' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /workspaces/depthai-ros/build/depthai_descriptions
+[2.311s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_descriptions' for CMake module files
+[2.312s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_descriptions' for CMake config files
+[2.313s] Level 1:colcon.colcon_core.shell:create_environment_hook('depthai_descriptions', 'cmake_prefix_path')
+[2.314s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/hook/cmake_prefix_path.ps1'
+[2.316s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/hook/cmake_prefix_path.dsv'
+[2.317s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/hook/cmake_prefix_path.sh'
+[2.319s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_descriptions/bin'
+[2.319s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_descriptions/lib/pkgconfig/depthai_descriptions.pc'
+[2.322s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_descriptions/lib/python3.10/site-packages'
+[2.323s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_descriptions/bin'
+[2.324s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/package.ps1'
+[2.326s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/package.dsv'
+[2.327s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/package.sh'
+[2.329s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/package.bash'
+[2.331s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/package.zsh'
+[2.332s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/depthai-ros/install/depthai_descriptions/share/colcon-core/packages/depthai_descriptions)
+[2.371s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(depthai_descriptions)
+[2.371s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_descriptions' for CMake module files
+[2.372s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_descriptions' for CMake config files
+[2.373s] Level 1:colcon.colcon_core.shell:create_environment_hook('depthai_descriptions', 'cmake_prefix_path')
+[2.374s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/hook/cmake_prefix_path.ps1'
+[2.375s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/hook/cmake_prefix_path.dsv'
+[2.376s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/hook/cmake_prefix_path.sh'
+[2.377s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_descriptions/bin'
+[2.377s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_descriptions/lib/pkgconfig/depthai_descriptions.pc'
+[2.378s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_descriptions/lib/python3.10/site-packages'
+[2.378s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_descriptions/bin'
+[2.379s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/package.ps1'
+[2.380s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/package.dsv'
+[2.381s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/package.sh'
+[2.382s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/package.bash'
+[2.383s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/package.zsh'
+[2.384s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/depthai-ros/install/depthai_descriptions/share/colcon-core/packages/depthai_descriptions)
+[5.020s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/depthai-ros/build/depthai_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /workspaces/depthai-ros/depthai_ros_msgs -DCMAKE_INSTALL_PREFIX=/workspaces/depthai-ros/install/depthai_ros_msgs
+[5.022s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/depthai-ros/build/depthai_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspaces/depthai-ros/build/depthai_ros_msgs -- -j6 -l6
+[24.002s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/depthai-ros/build/depthai_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspaces/depthai-ros/build/depthai_ros_msgs -- -j6 -l6
+[24.431s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/depthai-ros/build/depthai_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /workspaces/depthai-ros/build/depthai_ros_msgs
+[24.650s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(depthai_ros_msgs)
+[24.651s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_ros_msgs' for CMake module files
+[24.655s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_ros_msgs' for CMake config files
+[24.656s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/depthai-ros/build/depthai_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /workspaces/depthai-ros/build/depthai_ros_msgs
+[24.656s] Level 1:colcon.colcon_core.shell:create_environment_hook('depthai_ros_msgs', 'cmake_prefix_path')
+[24.657s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/hook/cmake_prefix_path.ps1'
+[24.658s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/hook/cmake_prefix_path.dsv'
+[24.658s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/hook/cmake_prefix_path.sh'
+[24.660s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_ros_msgs/lib'
+[24.660s] Level 1:colcon.colcon_core.shell:create_environment_hook('depthai_ros_msgs', 'ld_library_path_lib')
+[24.660s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/hook/ld_library_path_lib.ps1'
+[24.661s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/hook/ld_library_path_lib.dsv'
+[24.662s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/hook/ld_library_path_lib.sh'
+[24.662s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_ros_msgs/bin'
+[24.663s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_ros_msgs/lib/pkgconfig/depthai_ros_msgs.pc'
+[24.663s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_ros_msgs/lib/python3.10/site-packages'
+[24.663s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_ros_msgs/bin'
+[24.664s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/package.ps1'
+[24.665s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/package.dsv'
+[24.666s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/package.sh'
+[24.667s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/package.bash'
+[24.667s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/package.zsh'
+[24.668s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/depthai-ros/install/depthai_ros_msgs/share/colcon-core/packages/depthai_ros_msgs)
+[25.089s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(depthai_ros_msgs)
+[25.090s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_ros_msgs' for CMake module files
+[25.092s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_ros_msgs' for CMake config files
+[25.093s] Level 1:colcon.colcon_core.shell:create_environment_hook('depthai_ros_msgs', 'cmake_prefix_path')
+[25.093s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/hook/cmake_prefix_path.ps1'
+[25.095s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/hook/cmake_prefix_path.dsv'
+[25.096s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/hook/cmake_prefix_path.sh'
+[25.098s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_ros_msgs/lib'
+[25.099s] Level 1:colcon.colcon_core.shell:create_environment_hook('depthai_ros_msgs', 'ld_library_path_lib')
+[25.099s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/hook/ld_library_path_lib.ps1'
+[25.101s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/hook/ld_library_path_lib.dsv'
+[25.102s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/hook/ld_library_path_lib.sh'
+[25.103s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_ros_msgs/bin'
+[25.103s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_ros_msgs/lib/pkgconfig/depthai_ros_msgs.pc'
+[25.104s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_ros_msgs/lib/python3.10/site-packages'
+[25.105s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_ros_msgs/bin'
+[25.106s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/package.ps1'
+[25.107s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/package.dsv'
+[25.108s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/package.sh'
+[25.110s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/package.bash'
+[25.111s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_ros_msgs/share/depthai_ros_msgs/package.zsh'
+[25.112s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/depthai-ros/install/depthai_ros_msgs/share/colcon-core/packages/depthai_ros_msgs)
+[25.113s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/depthai-ros/depthai_bridge' with build type 'ament_cmake'
+[25.113s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/depthai-ros/depthai_bridge'
+[25.114s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[25.114s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[25.121s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/depthai-ros/depthai_filters' with build type 'ament_cmake'
+[25.122s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/depthai-ros/depthai_filters'
+[25.122s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[25.122s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[25.140s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/depthai-ros/build/depthai_bridge': AMENT_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs:/ws/install:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/depthai-ros/depthai_bridge -DCMAKE_INSTALL_PREFIX=/workspaces/depthai-ros/install/depthai_bridge
+[25.144s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/depthai-ros/build/depthai_filters': AMENT_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs:/ws/install:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/depthai-ros/depthai_filters -DCMAKE_INSTALL_PREFIX=/workspaces/depthai-ros/install/depthai_filters
+[28.815s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/depthai-ros/build/depthai_filters' returned '0': AMENT_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs:/ws/install:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/depthai-ros/depthai_filters -DCMAKE_INSTALL_PREFIX=/workspaces/depthai-ros/install/depthai_filters
+[28.819s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/depthai-ros/build/depthai_filters': AMENT_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs:/ws/install:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/depthai-ros/build/depthai_filters -- -j6 -l6
+[29.998s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/depthai-ros/build/depthai_bridge' returned '0': AMENT_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs:/ws/install:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/depthai-ros/depthai_bridge -DCMAKE_INSTALL_PREFIX=/workspaces/depthai-ros/install/depthai_bridge
+[30.007s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/depthai-ros/build/depthai_bridge': AMENT_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs:/ws/install:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/depthai-ros/build/depthai_bridge -- -j6 -l6
+[120.486s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/depthai-ros/build/depthai_filters' returned '0': AMENT_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs:/ws/install:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/depthai-ros/build/depthai_filters -- -j6 -l6
+[120.562s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/depthai-ros/build/depthai_filters': AMENT_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs:/ws/install:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/depthai-ros/build/depthai_filters
+[120.715s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(depthai_filters)
+[120.718s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_filters' for CMake module files
+[120.719s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/depthai-ros/build/depthai_filters' returned '0': AMENT_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs:/ws/install:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/depthai-ros/build/depthai_filters
+[120.720s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_filters' for CMake config files
+[120.721s] Level 1:colcon.colcon_core.shell:create_environment_hook('depthai_filters', 'cmake_prefix_path')
+[120.722s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/hook/cmake_prefix_path.ps1'
+[120.725s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/hook/cmake_prefix_path.dsv'
+[120.726s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/hook/cmake_prefix_path.sh'
+[120.729s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_filters/lib'
+[120.729s] Level 1:colcon.colcon_core.shell:create_environment_hook('depthai_filters', 'ld_library_path_lib')
+[120.729s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/hook/ld_library_path_lib.ps1'
+[120.730s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/hook/ld_library_path_lib.dsv'
+[120.731s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/hook/ld_library_path_lib.sh'
+[120.731s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_filters/bin'
+[120.732s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_filters/lib/pkgconfig/depthai_filters.pc'
+[120.733s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_filters/lib/python3.10/site-packages'
+[120.733s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_filters/bin'
+[120.734s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/package.ps1'
+[120.735s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/package.dsv'
+[120.736s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/package.sh'
+[120.737s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/package.bash'
+[120.739s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/package.zsh'
+[120.740s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/depthai-ros/install/depthai_filters/share/colcon-core/packages/depthai_filters)
+[120.806s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(depthai_filters)
+[120.806s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_filters' for CMake module files
+[120.807s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_filters' for CMake config files
+[120.808s] Level 1:colcon.colcon_core.shell:create_environment_hook('depthai_filters', 'cmake_prefix_path')
+[120.808s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/hook/cmake_prefix_path.ps1'
+[120.809s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/hook/cmake_prefix_path.dsv'
+[120.810s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/hook/cmake_prefix_path.sh'
+[120.811s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_filters/lib'
+[120.811s] Level 1:colcon.colcon_core.shell:create_environment_hook('depthai_filters', 'ld_library_path_lib')
+[120.812s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/hook/ld_library_path_lib.ps1'
+[120.814s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/hook/ld_library_path_lib.dsv'
+[120.814s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/hook/ld_library_path_lib.sh'
+[120.815s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_filters/bin'
+[120.815s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_filters/lib/pkgconfig/depthai_filters.pc'
+[120.816s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_filters/lib/python3.10/site-packages'
+[120.816s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_filters/bin'
+[120.817s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/package.ps1'
+[120.818s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/package.dsv'
+[120.819s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/package.sh'
+[120.820s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/package.bash'
+[120.820s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_filters/share/depthai_filters/package.zsh'
+[120.821s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/depthai-ros/install/depthai_filters/share/colcon-core/packages/depthai_filters)
+[136.826s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/depthai-ros/build/depthai_bridge' returned '0': AMENT_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs:/ws/install:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/depthai-ros/build/depthai_bridge -- -j6 -l6
+[136.901s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/depthai-ros/build/depthai_bridge': AMENT_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs:/ws/install:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/depthai-ros/build/depthai_bridge
+[136.948s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(depthai_bridge)
+[136.950s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_bridge' for CMake module files
+[136.951s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/depthai-ros/build/depthai_bridge' returned '0': AMENT_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs:/ws/install:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/depthai-ros/install/depthai_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/depthai-ros/build/depthai_bridge
+[136.952s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_bridge' for CMake config files
+[136.953s] Level 1:colcon.colcon_core.shell:create_environment_hook('depthai_bridge', 'cmake_prefix_path')
+[136.954s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/hook/cmake_prefix_path.ps1'
+[136.956s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/hook/cmake_prefix_path.dsv'
+[136.957s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/hook/cmake_prefix_path.sh'
+[136.959s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_bridge/lib'
+[136.959s] Level 1:colcon.colcon_core.shell:create_environment_hook('depthai_bridge', 'ld_library_path_lib')
+[136.960s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/hook/ld_library_path_lib.ps1'
+[136.961s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/hook/ld_library_path_lib.dsv'
+[136.962s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/hook/ld_library_path_lib.sh'
+[136.963s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_bridge/bin'
+[136.963s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_bridge/lib/pkgconfig/depthai_bridge.pc'
+[136.964s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_bridge/lib/python3.10/site-packages'
+[136.965s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_bridge/bin'
+[136.966s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/package.ps1'
+[136.968s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/package.dsv'
+[136.969s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/package.sh'
+[136.971s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/package.bash'
+[136.972s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/package.zsh'
+[136.973s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/depthai-ros/install/depthai_bridge/share/colcon-core/packages/depthai_bridge)
+[137.044s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(depthai_bridge)
+[137.045s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_bridge' for CMake module files
+[137.048s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_bridge' for CMake config files
+[137.049s] Level 1:colcon.colcon_core.shell:create_environment_hook('depthai_bridge', 'cmake_prefix_path')
+[137.049s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/hook/cmake_prefix_path.ps1'
+[137.051s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/hook/cmake_prefix_path.dsv'
+[137.052s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/hook/cmake_prefix_path.sh'
+[137.054s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_bridge/lib'
+[137.054s] Level 1:colcon.colcon_core.shell:create_environment_hook('depthai_bridge', 'ld_library_path_lib')
+[137.055s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/hook/ld_library_path_lib.ps1'
+[137.056s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/hook/ld_library_path_lib.dsv'
+[137.057s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/hook/ld_library_path_lib.sh'
+[137.059s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_bridge/bin'
+[137.059s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_bridge/lib/pkgconfig/depthai_bridge.pc'
+[137.060s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_bridge/lib/python3.10/site-packages'
+[137.060s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_bridge/bin'
+[137.061s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/package.ps1'
+[137.063s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/package.dsv'
+[137.064s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/package.sh'
+[137.065s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/package.bash'
+[137.067s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_bridge/share/depthai_bridge/package.zsh'
+[137.068s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/depthai-ros/install/depthai_bridge/share/colcon-core/packages/depthai_bridge)
+[137.069s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/depthai-ros/depthai_examples' with build type 'ament_cmake'
+[137.070s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/depthai-ros/depthai_examples'
+[137.071s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[137.071s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[137.107s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/depthai-ros/build/depthai_examples': AMENT_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_bridge:/workspaces/depthai-ros/install/depthai_ros_msgs:/workspaces/depthai-ros/install/depthai_descriptions:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_bridge:/workspaces/depthai-ros/install/depthai_ros_msgs:/workspaces/depthai-ros/install/depthai_descriptions:/ws/install:/opt/ros/humble GAZEBO_MODEL_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${GAZEBO_MODEL_PATH} GAZEBO_RESOURCE_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${GAZEBO_RESOURCE_PATH} IGN_GAZEBO_MODEL_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${IGN_GAZEBO_MODEL_PATH} IGN_GAZEBO_RESOURCE_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${IGN_GAZEBO_RESOURCE_PATH} LD_LIBRARY_PATH=/workspaces/depthai-ros/install/depthai_bridge/lib:/workspaces/depthai-ros/install/depthai_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/depthai-ros/depthai_examples -DCMAKE_INSTALL_PREFIX=/workspaces/depthai-ros/install/depthai_examples
+[158.809s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/depthai-ros/build/depthai_examples' returned '0': AMENT_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_bridge:/workspaces/depthai-ros/install/depthai_ros_msgs:/workspaces/depthai-ros/install/depthai_descriptions:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_bridge:/workspaces/depthai-ros/install/depthai_ros_msgs:/workspaces/depthai-ros/install/depthai_descriptions:/ws/install:/opt/ros/humble GAZEBO_MODEL_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${GAZEBO_MODEL_PATH} GAZEBO_RESOURCE_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${GAZEBO_RESOURCE_PATH} IGN_GAZEBO_MODEL_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${IGN_GAZEBO_MODEL_PATH} IGN_GAZEBO_RESOURCE_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${IGN_GAZEBO_RESOURCE_PATH} LD_LIBRARY_PATH=/workspaces/depthai-ros/install/depthai_bridge/lib:/workspaces/depthai-ros/install/depthai_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/depthai-ros/depthai_examples -DCMAKE_INSTALL_PREFIX=/workspaces/depthai-ros/install/depthai_examples
+[158.814s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/depthai-ros/build/depthai_examples': AMENT_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_bridge:/workspaces/depthai-ros/install/depthai_ros_msgs:/workspaces/depthai-ros/install/depthai_descriptions:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_bridge:/workspaces/depthai-ros/install/depthai_ros_msgs:/workspaces/depthai-ros/install/depthai_descriptions:/ws/install:/opt/ros/humble GAZEBO_MODEL_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${GAZEBO_MODEL_PATH} GAZEBO_RESOURCE_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${GAZEBO_RESOURCE_PATH} IGN_GAZEBO_MODEL_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${IGN_GAZEBO_MODEL_PATH} IGN_GAZEBO_RESOURCE_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${IGN_GAZEBO_RESOURCE_PATH} LD_LIBRARY_PATH=/workspaces/depthai-ros/install/depthai_bridge/lib:/workspaces/depthai-ros/install/depthai_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/depthai-ros/build/depthai_examples -- -j6 -l6
+[211.946s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/depthai-ros/build/depthai_examples' returned '2': AMENT_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_bridge:/workspaces/depthai-ros/install/depthai_ros_msgs:/workspaces/depthai-ros/install/depthai_descriptions:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_bridge:/workspaces/depthai-ros/install/depthai_ros_msgs:/workspaces/depthai-ros/install/depthai_descriptions:/ws/install:/opt/ros/humble GAZEBO_MODEL_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${GAZEBO_MODEL_PATH} GAZEBO_RESOURCE_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${GAZEBO_RESOURCE_PATH} IGN_GAZEBO_MODEL_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${IGN_GAZEBO_MODEL_PATH} IGN_GAZEBO_RESOURCE_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${IGN_GAZEBO_RESOURCE_PATH} LD_LIBRARY_PATH=/workspaces/depthai-ros/install/depthai_bridge/lib:/workspaces/depthai-ros/install/depthai_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/depthai-ros/build/depthai_examples -- -j6 -l6
+[212.044s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(depthai_examples)
+[212.046s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_examples' for CMake module files
+[212.048s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_examples' for CMake config files
+[212.050s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_examples/bin'
+[212.051s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_examples/lib/pkgconfig/depthai_examples.pc'
+[212.053s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_examples/lib/python3.10/site-packages'
+[212.054s] Level 1:colcon.colcon_core.environment:checking '/workspaces/depthai-ros/install/depthai_examples/bin'
+[212.055s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/package.ps1'
+[212.060s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/package.dsv'
+[212.063s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/package.sh'
+[212.064s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/package.bash'
+[212.066s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/depthai-ros/install/depthai_examples/share/depthai_examples/package.zsh'
+[212.068s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/depthai-ros/install/depthai_examples/share/colcon-core/packages/depthai_examples)
+[212.080s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[212.081s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[212.081s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[212.082s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[212.124s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[212.124s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[212.124s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[212.124s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[212.130s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[212.130s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[212.132s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/depthai-ros/install/local_setup.ps1'
+[212.135s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspaces/depthai-ros/install/_local_setup_util_ps1.py'
+[212.138s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/depthai-ros/install/setup.ps1'
+[212.212s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/depthai-ros/install/local_setup.sh'
+[212.214s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspaces/depthai-ros/install/_local_setup_util_sh.py'
+[212.215s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/depthai-ros/install/setup.sh'
+[212.217s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/depthai-ros/install/local_setup.bash'
+[212.218s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/depthai-ros/install/setup.bash'
+[212.220s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/depthai-ros/install/local_setup.zsh'
+[212.222s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/depthai-ros/install/setup.zsh'

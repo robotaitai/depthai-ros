@@ -1,0 +1,6 @@
+Invoking command in '/workspaces/depthai-ros/build/depthai_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /workspaces/depthai-ros/depthai_ros_msgs -DCMAKE_INSTALL_PREFIX=/workspaces/depthai-ros/install/depthai_ros_msgs
+Invoked command in '/workspaces/depthai-ros/build/depthai_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /workspaces/depthai-ros/depthai_ros_msgs -DCMAKE_INSTALL_PREFIX=/workspaces/depthai-ros/install/depthai_ros_msgs
+Invoking command in '/workspaces/depthai-ros/build/depthai_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspaces/depthai-ros/build/depthai_ros_msgs -- -j6 -l6
+Invoked command in '/workspaces/depthai-ros/build/depthai_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspaces/depthai-ros/build/depthai_ros_msgs -- -j6 -l6
+Invoking command in '/workspaces/depthai-ros/build/depthai_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /workspaces/depthai-ros/build/depthai_ros_msgs
+Invoked command in '/workspaces/depthai-ros/build/depthai_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /workspaces/depthai-ros/build/depthai_ros_msgs

@@ -1,0 +1,54 @@
+[0.044s] Invoking command in '/workspaces/depthai-ros/build/depthai_examples': AMENT_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_bridge:/workspaces/depthai-ros/install/depthai_ros_msgs:/workspaces/depthai-ros/install/depthai_descriptions:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_bridge:/workspaces/depthai-ros/install/depthai_ros_msgs:/workspaces/depthai-ros/install/depthai_descriptions:/ws/install:/opt/ros/humble GAZEBO_MODEL_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${GAZEBO_MODEL_PATH} GAZEBO_RESOURCE_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${GAZEBO_RESOURCE_PATH} IGN_GAZEBO_MODEL_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${IGN_GAZEBO_MODEL_PATH} IGN_GAZEBO_RESOURCE_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${IGN_GAZEBO_RESOURCE_PATH} LD_LIBRARY_PATH=/workspaces/depthai-ros/install/depthai_bridge/lib:/workspaces/depthai-ros/install/depthai_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/depthai-ros/build/depthai_examples -- -j6 -l6
+[0.180s] [35m[1mConsolidate compiler generated dependencies of target crop_control_service[0m
+[0.196s] [35m[1mConsolidate compiler generated dependencies of target rgb_stereo_node[0m
+[0.216s] [35m[1mConsolidate compiler generated dependencies of target stereo_node[0m
+[0.236s] [35m[1mConsolidate compiler generated dependencies of target mobilenet_node[0m
+[0.237s] [  5%] [32mBuilding CXX object CMakeFiles/stereo_inertial_node.dir/src/stereo_inertial_publisher.cpp.o[0m
+[0.303s] [ 15%] Built target crop_control_service
+[0.303s] [ 20%] [32mBuilding CXX object CMakeFiles/feature_tracker.dir/src/feature_tracker_publisher.cpp.o[0m
+[0.340s] [ 30%] Built target stereo_node
+[0.363s] [ 35%] [32mBuilding CXX object CMakeFiles/rgb_stereo_node.dir/src/rgb_stereo_node.cpp.o[0m
+[0.412s] [ 45%] Built target mobilenet_node
+[0.445s] [35m[1mConsolidate compiler generated dependencies of target yolov4_spatial_node[0m
+[0.473s] [ 50%] [32mBuilding CXX object CMakeFiles/yolov4_node.dir/src/yolov4_publisher.cpp.o[0m
+[0.548s] [ 55%] [32mBuilding CXX object CMakeFiles/tracker_yolov4_node.dir/src/tracker_yolov4_publisher.cpp.o[0m
+[0.696s] [ 65%] Built target yolov4_spatial_node
+[0.843s] [ 70%] [32mBuilding CXX object CMakeFiles/tracker_yolov4_spatial_node.dir/src/tracker_yolov4_spatial_publisher.cpp.o[0m
+[18.212s] [01m[Kc++:[m[K [01;31m[Kfatal error: [m[KKilled signal terminated program cc1plus
+[18.214s] compilation terminated.
+[18.214s] gmake[2]: *** [CMakeFiles/stereo_inertial_node.dir/build.make:76: CMakeFiles/stereo_inertial_node.dir/src/stereo_inertial_publisher.cpp.o] Error 1
+[18.214s] gmake[1]: *** [CMakeFiles/Makefile2:233: CMakeFiles/stereo_inertial_node.dir/all] Error 2
+[18.214s] gmake[1]: *** Waiting for unfinished jobs....
+[23.234s] [01m[Kc++:[m[K [01;31m[Kfatal error: [m[KKilled signal terminated program cc1plus
+[23.235s] compilation terminated.
+[23.240s] gmake[2]: *** [CMakeFiles/tracker_yolov4_node.dir/build.make:76: CMakeFiles/tracker_yolov4_node.dir/src/tracker_yolov4_publisher.cpp.o] Error 1
+[23.244s] gmake[1]: *** [CMakeFiles/Makefile2:363: CMakeFiles/tracker_yolov4_node.dir/all] Error 2
+[23.929s] [01m[K/workspaces/depthai-ros/depthai_examples/src/rgb_stereo_node.cpp:[m[K In lambda function:
+[23.932s] [01m[K/workspaces/depthai-ros/depthai_examples/src/rgb_stereo_node.cpp:236:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool dai::DeviceBase::setIrLaserDotProjectorBrightness(float, int)[m[K’ is deprecated: Use setIrLaserDotProjectorIntensity(float intensity) instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[23.934s]   236 |             [01;35m[Kdevice.setIrLaserDotProjectorBrightness(static_cast<float>(dotProjectormA))[m[K;
+[23.937s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[23.939s] In file included from [01m[K/opt/ros/humble/include/depthai/device/Device.hpp:14[m[K,
+[23.942s]                  from [01m[K/workspaces/depthai-ros/depthai_examples/src/rgb_stereo_node.cpp:17[m[K:
+[23.944s] [01m[K/opt/ros/humble/include/depthai/device/DeviceBase.hpp:498:90:[m[K [01;36m[Knote: [m[Kdeclared here
+[23.948s]   498 |     [[deprecated("Use setIrLaserDotProjectorIntensity(float intensity) instead.")]] bool [01;36m[KsetIrLaserDotProjectorBrightness[m[K(float mA, int mask = -1);
+[23.951s]       |                                                                                          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[23.957s] [01m[K/workspaces/depthai-ros/depthai_examples/src/rgb_stereo_node.cpp:242:45:[m[K [01;35m[Kwarning: [m[K‘[01m[Kbool dai::DeviceBase::setIrFloodLightBrightness(float, int)[m[K’ is deprecated: Use setIrFloodLightIntensity(float intensity) instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[23.959s]   242 |             [01;35m[Kdevice.setIrFloodLightBrightness(static_cast<float>(floodLightmA))[m[K;
+[23.962s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[23.964s] In file included from [01m[K/opt/ros/humble/include/depthai/device/Device.hpp:14[m[K,
+[23.967s]                  from [01m[K/workspaces/depthai-ros/depthai_examples/src/rgb_stereo_node.cpp:17[m[K:
+[23.977s] [01m[K/opt/ros/humble/include/depthai/device/DeviceBase.hpp:510:83:[m[K [01;36m[Knote: [m[Kdeclared here
+[23.980s]   510 |     [[deprecated("Use setIrFloodLightIntensity(float intensity) instead.")]] bool [01;36m[KsetIrFloodLightBrightness[m[K(float mA, int mask = -1);
+[23.982s]       |                                                                                   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[34.948s] [01m[Kc++:[m[K [01;31m[Kfatal error: [m[KKilled signal terminated program cc1plus
+[34.948s] compilation terminated.
+[34.951s] gmake[2]: *** [CMakeFiles/tracker_yolov4_spatial_node.dir/build.make:76: CMakeFiles/tracker_yolov4_spatial_node.dir/src/tracker_yolov4_spatial_publisher.cpp.o] Error 1
+[34.954s] gmake[1]: *** [CMakeFiles/Makefile2:389: CMakeFiles/tracker_yolov4_spatial_node.dir/all] Error 2
+[40.875s] [ 75%] [32m[1mLinking CXX executable rgb_stereo_node[0m
+[41.811s] [ 80%] [32m[1mLinking CXX executable yolov4_node[0m
+[43.183s] [ 80%] Built target rgb_stereo_node
+[43.829s] [ 80%] Built target yolov4_node
+[45.445s] [ 85%] [32m[1mLinking CXX executable feature_tracker[0m
+[47.059s] [ 85%] Built target feature_tracker
+[47.063s] gmake: *** [Makefile:146: all] Error 2
+[47.091s] Invoked command in '/workspaces/depthai-ros/build/depthai_examples' returned '2': AMENT_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_bridge:/workspaces/depthai-ros/install/depthai_ros_msgs:/workspaces/depthai-ros/install/depthai_descriptions:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/depthai-ros/install/depthai_bridge:/workspaces/depthai-ros/install/depthai_ros_msgs:/workspaces/depthai-ros/install/depthai_descriptions:/ws/install:/opt/ros/humble GAZEBO_MODEL_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${GAZEBO_MODEL_PATH} GAZEBO_RESOURCE_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${GAZEBO_RESOURCE_PATH} IGN_GAZEBO_MODEL_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${IGN_GAZEBO_MODEL_PATH} IGN_GAZEBO_RESOURCE_PATH=/workspaces/depthai-ros/install/depthai_descriptions:${IGN_GAZEBO_RESOURCE_PATH} LD_LIBRARY_PATH=/workspaces/depthai-ros/install/depthai_bridge/lib:/workspaces/depthai-ros/install/depthai_ros_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/depthai-ros/install/depthai_ros_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/depthai-ros/build/depthai_examples -- -j6 -l6

@@ -1,0 +1,41 @@
+[0.014s] Invoking command in '/workspaces/depthai-ros/build/depthai_descriptions': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspaces/depthai-ros/build/depthai_descriptions -- -j6 -l6
+[0.087s] Invoked command in '/workspaces/depthai-ros/build/depthai_descriptions' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspaces/depthai-ros/build/depthai_descriptions -- -j6 -l6
+[0.125s] Invoking command in '/workspaces/depthai-ros/build/depthai_descriptions': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /workspaces/depthai-ros/build/depthai_descriptions
+[0.141s] -- Install configuration: ""
+[0.141s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/launch
+[0.141s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/launch/urdf_launch.py
+[0.141s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf
+[0.142s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf/depthai_descr.urdf.xacro
+[0.142s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf/models
+[0.142s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-D-SR.stl
+[0.142s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-D-S2.stl
+[0.142s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-D.stl
+[0.143s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-D-CM4-POE.stl
+[0.143s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-D-PRO-W.stl
+[0.143s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-D-IOT-75.stl
+[0.143s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-D-LITE.stl
+[0.143s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-D-LR.stl
+[0.143s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-D-PRO.stl
+[0.144s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf/models/OAK-D-POE.stl
+[0.144s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf/base_descr.urdf.xacro
+[0.144s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf/include
+[0.144s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf/include/base_macro.urdf.xacro
+[0.144s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/urdf/include/depthai_macro.urdf.xacro
+[0.145s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/environment/depthai_descriptions.sh
+[0.145s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/environment/depthai_descriptions.dsv
+[0.145s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/ament_index/resource_index/package_run_dependencies/depthai_descriptions
+[0.145s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/ament_index/resource_index/parent_prefix_path/depthai_descriptions
+[0.145s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/environment/ament_prefix_path.sh
+[0.146s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/environment/ament_prefix_path.dsv
+[0.146s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/environment/path.sh
+[0.146s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/environment/path.dsv
+[0.146s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/local_setup.bash
+[0.146s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/local_setup.sh
+[0.146s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/local_setup.zsh
+[0.147s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/local_setup.dsv
+[0.147s] -- Installing: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/package.dsv
+[0.147s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/ament_index/resource_index/packages/depthai_descriptions
+[0.147s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/cmake/depthai_descriptionsConfig.cmake
+[0.147s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/cmake/depthai_descriptionsConfig-version.cmake
+[0.147s] -- Up-to-date: /workspaces/depthai-ros/install/depthai_descriptions/share/depthai_descriptions/package.xml
+[0.158s] Invoked command in '/workspaces/depthai-ros/build/depthai_descriptions' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /workspaces/depthai-ros/build/depthai_descriptions

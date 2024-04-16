@@ -1,6 +1,6 @@
 // See https://aka.ms/vscode-remote/devcontainer.json for format details.
 {
-	"dockerFile": "../src/depthai-ros/Dockerfile",
+	"dockerFile": "../Dockerfile",
 	"build": {
 		"args": {"BUILD_SEQUENTIAL": "1",
 				 "USE_RVIZ": "1"}
